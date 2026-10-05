@@ -117,15 +117,18 @@ Chinese cyber-wuxia background illustration, no characters. Environments painted
 | 主歌快嘴歌词 | 得意黑 Smiley Sans | 窄身斜体，有速度感，快速闪现也看得清 |
 | Bridge 歌词 | 霞鹜文楷 LXGW WenKai | 温和的楷体，配古琴和慢推 |
 | 念白（傲娇台词） | 站酷快乐体 ZCOOL KuaiLe | 圆润活泼，配漫画式字幕框 |
-| 代码、报错、终端 | JetBrains Mono；中文用更纱等宽 Sarasa Mono SC | 等宽字，有真实的终端感 |
+| 代码、报错、终端 | JetBrains Mono | 等宽字，有真实的终端感 |
 | 系统重启、主歌 2 复古段 | 缝合像素字体 Fusion Pixel | 像素字，配 CRT 和开机自检 |
 
 - **授权**：上表全部是 OFL 授权，可以免费用在商用视频和封面里。方正、汉仪、字魂、造字工房的书法字大多要单独买商用授权；视频开了激励计划或接了商单，字体厂商一般按商用算。
 - **字跟着画面走**：红色报错的部分用等宽字，水墨的部分用书法和楷书。
 - **书法字不要加粗描边**，会把笔触糊掉。深色背景上加青色辉光（`text-shadow`），浅色背景上用墨黑色，外面加一圈淡淡的宣纸色外发光。
 - **竖排**用 `writing-mode: vertical-rl`。
-- **加载**：Ma Shan Zheng、Zhi Mang Xing、ZCOOL KuaiLe、JetBrains Mono 在 Google Fonts 上，用 `@remotion/google-fonts` 加载；得意黑、霞鹜文楷、更纱、缝合像素从各自的 GitHub 下载，放进 `public/fonts/`，用 `@remotion/fonts` 的 `loadFont` 加 `staticFile()` 加载。
-- **子集化**：中文字体文件动辄十几 MB。歌词是固定的，可以用 fonttools 的 `pyftsubset` 只保留歌词里用到的字，渲染会快很多。
+- **加载**：全部从 npm 安装（见 `package.json`），在 `src/fonts.ts` 里引入 CSS。渲染前用 `useFontsReady` 把要用到的字先加载完，否则截图里可能还是兜底字体。
+- **不用自己做子集**：npm 上的中文字体包大多已经按 unicode-range 拆成小文件，渲染时只下载用到的字。
+- **JetBrains Mono 的 npm 版不含 ✓ ✗ → 这类符号**：测试结果写 PASS / FAIL，箭头写 `->`，字体会自动连成箭头。
+- **更纱等宽不在 npm 上**：代码区基本是英文，JetBrains Mono 够用；需要中文代码注释时，再从更纱的 GitHub 发布页单独下载。
+- **样张**：`npx remotion still FontSpecimen out/font-specimen.png` 会把所有字体按实际用法渲染成一张图。
 
 ## 8. Remotion 合成规则
 

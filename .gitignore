@@ -1,0 +1,4 @@
+node_modules/
+out/
+# 草图和生成图不进仓库
+public/drafts/

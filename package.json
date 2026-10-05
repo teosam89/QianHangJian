@@ -1,0 +1,26 @@
+{
+  "name": "qianhangjian",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "still:fonts": "remotion still FontSpecimen out/font-specimen.png",
+    "still:cover": "remotion still CoverTypeset out/cover-typeset.png"
+  },
+  "dependencies": {
+    "@chinese-fonts/dyh": "^3.0.0",
+    "@fontsource/fusion-pixel-12px-monospaced-sc": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/lxgw-wenkai": "^5.3.0",
+    "@fontsource/ma-shan-zheng": "^5.3.1",
+    "@fontsource/zcool-kuaile": "^5.3.0",
+    "@fontsource/zhi-mang-xing": "^5.3.0",
+    "@remotion/cli": "4.0.533",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "typescript": "^5.8.0"
+  }
+}
