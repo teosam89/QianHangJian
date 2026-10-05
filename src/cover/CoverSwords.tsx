@@ -7,8 +7,6 @@ import {
   ASSET,
   BackgroundLayer,
   CharacterLayer,
-  Egg,
-  EGG,
   H,
   PaperGrain,
   Placement,
@@ -60,7 +58,6 @@ export const CoverSwords: React.FC = () => {
   useFontsReady([
     { family: FONT.title, text: TITLE + "赛博江湖" },
     { family: FONT.bridge, text: HOOK, weight: 700 },
-    { family: FONT.code, text: EGG, weight: 700 },
     {
       family: FONT.verse,
       text: placeholderLabel(ASSET.swordsChar, CHAR_SPEC) + placeholderLabel(ASSET.swordsBg, "2560×1440"),
@@ -133,7 +130,6 @@ export const CoverSwords: React.FC = () => {
         </div>
       </div>
 
-      <Egg />
       <PaperGrain />
     </AbsoluteFill>
   );

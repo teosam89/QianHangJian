@@ -1,0 +1,1508 @@
+{
+ "audio": "music_164638153048065_5xodPGUjhEZAjhMx8uAuYN_jzalsv.mp3",
+ "duration_s": 210.95,
+ "bpm": 160.0,
+ "beat_s": 0.375,
+ "bar_s": 1.5,
+ "bars": 140,
+ "downbeat_formula": "bar b starts at 0.465 + 1.5 * b seconds (b = 0..139)",
+ "key": "F# minor throughout; pre-choruses and the bridge lean to C# minor; no key change in the final chorus",
+ "repeats": "Chorus 2 = Chorus 1 + 69.0 s and Final Chorus = Chorus 1 + 130.5 s on every line (within 0.06 s); Pre-Chorus 2 = Pre-Chorus 1 + 69.0 s",
+ "method": "UVR stem split, librosa beat grid (every 24 s window fits 159.9-160.1 BPM), CTC forced alignment over SenseVoice posteriors checked against SenseVoice, Paraformer, FireRed and partial Whisper",
+ "sections": [
+  {
+   "name": "Intro",
+   "bars": [
+    0,
+    7
+   ],
+   "start": 0.0,
+   "end": 12.465,
+   "note": "suona hook riff over glitch; a pickup hit at 0.30 s before bar 0; accents at 4.04 and 6.29"
+  },
+  {
+   "name": "Verse 1",
+   "bars": [
+    8,
+    23
+   ],
+   "start": 12.465,
+   "end": 36.465,
+   "note": "fast dense vocal, one line about every 3 s"
+  },
+  {
+   "name": "Pre-Chorus 1",
+   "bars": [
+    24,
+    27
+   ],
+   "start": 36.465,
+   "end": 42.465,
+   "note": "sub drops out (22.7 dB vs 34.5 in the verse), harmony leans to C# minor"
+  },
+  {
+   "name": "Chorus 1",
+   "bars": [
+    28,
+    35
+   ],
+   "start": 42.465,
+   "end": 54.465,
+   "note": "vocals start about 0.6 s before bar 28 (pickup 千行剑)"
+  },
+  {
+   "name": "Hook 1 + Spoken 1",
+   "bars": [
+    36,
+    39
+   ],
+   "start": 54.465,
+   "end": 60.465,
+   "note": "suona hook, loudest sub of the song (43 dB); 哼，就这点报错？ at 59.10"
+  },
+  {
+   "name": "Instrumental Drop 1",
+   "bars": [
+    40,
+    55
+   ],
+   "start": 60.465,
+   "end": 84.465,
+   "note": "suona lead, pipa, 808; hard hit at 60.46"
+  },
+  {
+   "name": "Verse 2",
+   "bars": [
+    56,
+    69
+   ],
+   "start": 84.465,
+   "end": 105.465,
+   "note": "goes double-time from bar 64 (96.47, hard hit): lines 算力如雨 to 测试全绿 about 1.5 s each"
+  },
+  {
+   "name": "Pre-Chorus 2",
+   "bars": [
+    70,
+    73
+   ],
+   "start": 105.465,
+   "end": 111.465,
+   "note": "= Pre-Chorus 1 + 69.0 s"
+  },
+  {
+   "name": "Chorus 2",
+   "bars": [
+    74,
+    81
+   ],
+   "start": 111.465,
+   "end": 123.465,
+   "note": "= Chorus 1 + 69.0 s"
+  },
+  {
+   "name": "Hook 2 + Spoken 2",
+   "bars": [
+    82,
+    86
+   ],
+   "start": 123.465,
+   "end": 130.965,
+   "note": "才、才不是为了你才修的！ at 128.30; the bass drops out under it"
+  },
+  {
+   "name": "Instrumental Drop 2",
+   "bars": [
+    87,
+    102
+   ],
+   "start": 130.965,
+   "end": 154.965,
+   "note": "same as Drop 1"
+  },
+  {
+   "name": "Bridge a",
+   "bars": [
+    103,
+    106
+   ],
+   "start": 154.965,
+   "end": 160.965,
+   "note": "sparse: guqin and soft vocal, no sub; hard hit at 154.95"
+  },
+  {
+   "name": "Bridge b",
+   "bars": [
+    107,
+    110
+   ],
+   "start": 160.965,
+   "end": 166.965,
+   "note": "band comes back in under 你若深夜 仍未眠"
+  },
+  {
+   "name": "Bridge tail",
+   "bars": [
+    111,
+    111
+   ],
+   "start": 166.965,
+   "end": 168.465,
+   "note": "fill, no vocal"
+  },
+  {
+   "name": "Stop",
+   "bars": [
+    112,
+    113
+   ],
+   "start": 168.465,
+   "end": 171.465,
+   "note": "error beep starts at 168.02 (inside bar 111), a ~660-740 Hz tone to 169.97; low hit at 169.97; near-silence 170.25-170.40; ……系统重启。 170.44-171.38; near-silence 171.30-171.45"
+  },
+  {
+   "name": "Final Chorus lead-in",
+   "bars": [
+    114,
+    114
+   ],
+   "start": 171.465,
+   "end": 172.965,
+   "note": "slam at 171.48; pickup 千行剑 at 172.36"
+  },
+  {
+   "name": "Final Chorus",
+   "bars": [
+    115,
+    122
+   ],
+   "start": 172.965,
+   "end": 184.965,
+   "note": "= Chorus 1 + 130.5 s; NO key change (sung pitch identical to Chorus 1, median B4)"
+  },
+  {
+   "name": "Outro",
+   "bars": [
+    123,
+    138
+   ],
+   "start": 184.965,
+   "end": 208.965,
+   "note": "suona hook riff; hard hit at 196.98"
+  },
+  {
+   "name": "Final gong",
+   "bars": [
+    139,
+    139
+   ],
+   "start": 208.965,
+   "end": 210.95,
+   "note": "hit at 208.61, gong at 208.98 (partials 745 / 1116 / 1491 Hz) ringing out to 210.95"
+  }
+ ],
+ "hits": [
+  {
+   "t": 0.3,
+   "what": "first sound, pickup before bar 0"
+  },
+  {
+   "t": 53.32,
+   "what": "slam on 劈 (一剑劈开数据界), Chorus 1"
+  },
+  {
+   "t": 59.54,
+   "what": "stab under 就这点报错"
+  },
+  {
+   "t": 60.46,
+   "what": "Drop 1"
+  },
+  {
+   "t": 96.47,
+   "what": "Verse 2 double-time"
+  },
+  {
+   "t": 111.46,
+   "what": "Chorus 2"
+  },
+  {
+   "t": 122.33,
+   "what": "slam on 劈, Chorus 2"
+  },
+  {
+   "t": 128.92,
+   "what": "stab under 才不是"
+  },
+  {
+   "t": 130.97,
+   "what": "Drop 2"
+  },
+  {
+   "t": 154.95,
+   "what": "Bridge (everything drops to guqin)"
+  },
+  {
+   "t": 169.97,
+   "what": "end of the error beep"
+  },
+  {
+   "t": 170.46,
+   "what": "系统重启 after near-silence"
+  },
+  {
+   "t": 171.48,
+   "what": "slam into the final chorus"
+  },
+  {
+   "t": 172.93,
+   "what": "Final Chorus bar 1"
+  },
+  {
+   "t": 183.85,
+   "what": "slam on 赛 (此去赛博再无缺): the payoff hit, same place as 劈"
+  },
+  {
+   "t": 196.98,
+   "what": "Outro half"
+  },
+  {
+   "t": 208.61,
+   "what": "last hit"
+  },
+  {
+   "t": 208.98,
+   "what": "single gong"
+  }
+ ],
+ "lines": [
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "霓虹淋雨 夜城不眠",
+   "start": 12.04,
+   "end": 13.9,
+   "chars": [
+    "霓",
+    "虹",
+    "淋",
+    "雨",
+    "夜",
+    "城",
+    "不",
+    "眠"
+   ],
+   "char_times": [
+    12.06,
+    12.24,
+    12.54,
+    12.72,
+    12.9,
+    13.02,
+    13.26,
+    13.44
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "全息灯下 剑影翩翩",
+   "start": 15.0,
+   "end": 16.9,
+   "chars": [
+    "全",
+    "息",
+    "灯",
+    "下",
+    "剑",
+    "影",
+    "翩",
+    "翩"
+   ],
+   "char_times": [
+    15.0,
+    15.18,
+    15.48,
+    15.6,
+    15.84,
+    16.02,
+    16.26,
+    16.5
+   ],
+   "confidence": "medium",
+   "note": "全息灯下 heard as 熟悉的小 by 4 of 5 recognisers; timing is solid"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "义体之中 心跳未断",
+   "start": 17.88,
+   "end": 20.22,
+   "chars": [
+    "义",
+    "体",
+    "之",
+    "中",
+    "心",
+    "跳",
+    "未",
+    "断"
+   ],
+   "char_times": [
+    17.88,
+    18.06,
+    18.3,
+    18.48,
+    18.96,
+    19.14,
+    19.56,
+    19.74
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "一念编译 万码翻卷",
+   "start": 20.88,
+   "end": 23.22,
+   "chars": [
+    "一",
+    "念",
+    "编",
+    "译",
+    "万",
+    "码",
+    "翻",
+    "卷"
+   ],
+   "char_times": [
+    20.94,
+    21.06,
+    21.24,
+    21.42,
+    21.96,
+    22.14,
+    22.56,
+    22.74
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "黑客如潮 破墙来犯",
+   "start": 24.04,
+   "end": 25.88,
+   "chars": [
+    "黑",
+    "客",
+    "如",
+    "潮",
+    "破",
+    "墙",
+    "来",
+    "犯"
+   ],
+   "char_times": [
+    24.06,
+    24.24,
+    24.48,
+    24.66,
+    24.84,
+    25.02,
+    25.26,
+    25.44
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "数据深处 刀光正寒",
+   "start": 26.94,
+   "end": 29.06,
+   "chars": [
+    "数",
+    "据",
+    "深",
+    "处",
+    "刀",
+    "光",
+    "正",
+    "寒"
+   ],
+   "char_times": [
+    26.94,
+    27.18,
+    27.42,
+    27.6,
+    27.9,
+    28.02,
+    28.26,
+    28.5
+   ],
+   "confidence": "medium",
+   "note": "all five recognisers hear 世界深处 for 数据深处 (shù jù → shì jiè): sung that way or slurred"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "芯片刻下 侠义二字",
+   "start": 29.82,
+   "end": 32.22,
+   "chars": [
+    "芯",
+    "片",
+    "刻",
+    "下",
+    "侠",
+    "义",
+    "二",
+    "字"
+   ],
+   "char_times": [
+    29.88,
+    30.06,
+    30.3,
+    30.48,
+    30.66,
+    31.32,
+    31.56,
+    31.74
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 1",
+   "kind": "sung",
+   "text": "一键回车 斩尽万般",
+   "start": 32.52,
+   "end": 35.26,
+   "chars": [
+    "一",
+    "键",
+    "回",
+    "车",
+    "斩",
+    "尽",
+    "万",
+    "般"
+   ],
+   "char_times": [
+    32.52,
+    32.7,
+    32.94,
+    33.06,
+    33.72,
+    34.08,
+    34.5,
+    34.74
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Pre-Chorus 1",
+   "kind": "sung",
+   "text": "电流穿过 万籁俱静",
+   "start": 35.9,
+   "end": 38.4,
+   "chars": [
+    "电",
+    "流",
+    "穿",
+    "过",
+    "万",
+    "籁",
+    "俱",
+    "静"
+   ],
+   "char_times": [
+    35.94,
+    36.06,
+    36.3,
+    36.48,
+    37.44,
+    37.56,
+    37.86,
+    37.98
+   ],
+   "confidence": "low",
+   "note": "ASR weak on 电流穿过; 万籁 heard clearly; timing confirmed by token times"
+  },
+  {
+   "section": "Pre-Chorus 1",
+   "kind": "sung",
+   "text": "零与一间 胜负已定",
+   "start": 38.88,
+   "end": 41.28,
+   "chars": [
+    "零",
+    "与",
+    "一",
+    "间",
+    "胜",
+    "负",
+    "已",
+    "定"
+   ],
+   "char_times": [
+    38.94,
+    39.12,
+    39.36,
+    39.48,
+    39.9,
+    40.08,
+    40.56,
+    40.8
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Chorus 1",
+   "kind": "sung",
+   "text": "千行剑 破长夜 光速斩尽红字劫",
+   "start": 41.84,
+   "end": 44.7,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "破",
+    "长",
+    "夜",
+    "光",
+    "速",
+    "斩",
+    "尽",
+    "红",
+    "字",
+    "劫"
+   ],
+   "char_times": [
+    41.88,
+    42.12,
+    42.3,
+    42.54,
+    42.96,
+    43.14,
+    43.44,
+    43.62,
+    43.98,
+    44.16,
+    44.34,
+    44.46,
+    44.64
+   ],
+   "confidence": "high",
+   "note": "千行 is sung qiān háng (heard 先行/千航/前汉), as meant"
+  },
+  {
+   "section": "Chorus 1",
+   "kind": "sung",
+   "text": "千行剑 落如雪 万般漏洞皆可解",
+   "start": 44.72,
+   "end": 47.88,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "落",
+    "如",
+    "雪",
+    "万",
+    "般",
+    "漏",
+    "洞",
+    "皆",
+    "可",
+    "解"
+   ],
+   "char_times": [
+    44.94,
+    45.12,
+    45.3,
+    45.54,
+    45.9,
+    46.08,
+    46.32,
+    46.62,
+    46.86,
+    46.98,
+    47.28,
+    47.52,
+    47.7
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Chorus 1",
+   "kind": "sung",
+   "text": "赛博江湖 谁做主 一行代码定生灭",
+   "start": 47.9,
+   "end": 51.02,
+   "chars": [
+    "赛",
+    "博",
+    "江",
+    "湖",
+    "谁",
+    "做",
+    "主",
+    "一",
+    "行",
+    "代",
+    "码",
+    "定",
+    "生",
+    "灭"
+   ],
+   "char_times": [
+    48.12,
+    48.3,
+    48.48,
+    48.66,
+    48.78,
+    49.02,
+    49.2,
+    49.44,
+    49.8,
+    49.98,
+    50.16,
+    50.34,
+    50.52,
+    50.7
+   ],
+   "confidence": "medium",
+   "note": "灭 heard as 夜 (遍深夜 / 的深夜)"
+  },
+  {
+   "section": "Chorus 1",
+   "kind": "sung",
+   "text": "千行剑 千行剑 一剑劈开数据界",
+   "start": 51.04,
+   "end": 54.54,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "千",
+    "行",
+    "剑",
+    "一",
+    "剑",
+    "劈",
+    "开",
+    "数",
+    "据",
+    "界"
+   ],
+   "char_times": [
+    51.12,
+    51.3,
+    51.48,
+    51.9,
+    52.02,
+    52.2,
+    52.74,
+    52.92,
+    53.4,
+    53.52,
+    53.76,
+    53.94,
+    54.18
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Spoken 1",
+   "kind": "spoken",
+   "text": "哼，就这点报错？",
+   "start": 59.1,
+   "end": 60.48,
+   "chars": [
+    "哼",
+    "就",
+    "这",
+    "点",
+    "报",
+    "错"
+   ],
+   "char_times": [
+    59.1,
+    59.46,
+    59.58,
+    59.76,
+    60.0,
+    60.18
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "有人笑我 旧剑已钝",
+   "start": 84.04,
+   "end": 85.88,
+   "chars": [
+    "有",
+    "人",
+    "笑",
+    "我",
+    "旧",
+    "剑",
+    "已",
+    "钝"
+   ],
+   "char_times": [
+    84.06,
+    84.24,
+    84.36,
+    84.6,
+    84.78,
+    85.02,
+    85.2,
+    85.38
+   ],
+   "confidence": "high",
+   "note": "旧 heard as 坐/作 (zuò) by 4 of 5 recognisers"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "上个世纪 招式无人问",
+   "start": 86.66,
+   "end": 89.24,
+   "chars": [
+    "上",
+    "个",
+    "世",
+    "纪",
+    "招",
+    "式",
+    "无",
+    "人",
+    "问"
+   ],
+   "char_times": [
+    86.82,
+    86.94,
+    87.0,
+    87.3,
+    87.54,
+    87.66,
+    88.32,
+    88.5,
+    88.68
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "我偏要 重写内核",
+   "start": 89.74,
+   "end": 92.5,
+   "chars": [
+    "我",
+    "偏",
+    "要",
+    "重",
+    "写",
+    "内",
+    "核"
+   ],
+   "char_times": [
+    89.82,
+    90.0,
+    90.24,
+    90.54,
+    90.84,
+    91.68,
+    91.86
+   ],
+   "confidence": "medium",
+   "note": "我偏要 heard as 我更要 by 4 of 5 recognisers and the CTC argmax; only FireRed hears 偏"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "一夜之间 重构乾坤",
+   "start": 92.52,
+   "end": 95.24,
+   "chars": [
+    "一",
+    "夜",
+    "之",
+    "间",
+    "重",
+    "构",
+    "乾",
+    "坤"
+   ],
+   "char_times": [
+    92.58,
+    92.7,
+    93.0,
+    93.18,
+    93.66,
+    93.96,
+    94.5,
+    94.68
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "算力如雨 版本如风",
+   "start": 95.88,
+   "end": 97.58,
+   "chars": [
+    "算",
+    "力",
+    "如",
+    "雨",
+    "版",
+    "本",
+    "如",
+    "风"
+   ],
+   "char_times": [
+    95.94,
+    96.12,
+    96.3,
+    96.54,
+    96.66,
+    96.9,
+    97.08,
+    97.2
+   ],
+   "confidence": "medium",
+   "note": "Verse 2 goes double-time here (lines 19-22 about 1.5 s each), confirmed by SenseVoice token times"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "亿万线程 尽在掌中",
+   "start": 97.6,
+   "end": 98.98,
+   "chars": [
+    "亿",
+    "万",
+    "线",
+    "程",
+    "尽",
+    "在",
+    "掌",
+    "中"
+   ],
+   "char_times": [
+    97.62,
+    97.74,
+    97.92,
+    98.1,
+    98.4,
+    98.52,
+    98.76,
+    98.94
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "你说不可能 我说跑一遍",
+   "start": 99.0,
+   "end": 100.54,
+   "chars": [
+    "你",
+    "说",
+    "不",
+    "可",
+    "能",
+    "我",
+    "说",
+    "跑",
+    "一",
+    "遍"
+   ],
+   "char_times": [
+    99.24,
+    99.36,
+    99.48,
+    99.6,
+    99.72,
+    99.84,
+    99.96,
+    100.2,
+    100.38,
+    100.5
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Verse 2",
+   "kind": "sung",
+   "text": "测试全绿 霓虹正浓",
+   "start": 100.56,
+   "end": 104.0,
+   "chars": [
+    "测",
+    "试",
+    "全",
+    "绿",
+    "霓",
+    "虹",
+    "正",
+    "浓"
+   ],
+   "char_times": [
+    100.74,
+    100.86,
+    100.98,
+    101.16,
+    101.34,
+    101.64,
+    102.0,
+    102.24
+   ],
+   "confidence": "low",
+   "note": "ASR weak (heard 此手劝你后转落); last syllable 浓 held from 102.2 to 104.0 (vocal stem at -13 dB until 104.0)"
+  },
+  {
+   "section": "Pre-Chorus 2",
+   "kind": "sung",
+   "text": "电流穿过 万籁俱静",
+   "start": 104.9,
+   "end": 107.46,
+   "chars": [
+    "电",
+    "流",
+    "穿",
+    "过",
+    "万",
+    "籁",
+    "俱",
+    "静"
+   ],
+   "char_times": [
+    104.94,
+    105.12,
+    105.36,
+    105.48,
+    106.44,
+    106.56,
+    106.8,
+    106.98
+   ],
+   "confidence": "low",
+   "note": "ASR weak on 电流穿过 and 俱静; start matches Pre-Chorus 1 + 69.0 s exactly"
+  },
+  {
+   "section": "Pre-Chorus 2",
+   "kind": "sung",
+   "text": "零与一间 胜负已定",
+   "start": 107.88,
+   "end": 110.3,
+   "chars": [
+    "零",
+    "与",
+    "一",
+    "间",
+    "胜",
+    "负",
+    "已",
+    "定"
+   ],
+   "char_times": [
+    107.94,
+    108.12,
+    108.3,
+    108.48,
+    108.72,
+    109.14,
+    109.62,
+    109.86
+   ],
+   "confidence": "low",
+   "note": "ASR weak; start matches Pre-Chorus 1 + 69.0 s exactly; per-character times mostly forced"
+  },
+  {
+   "section": "Chorus 2",
+   "kind": "sung",
+   "text": "千行剑 破长夜 光速斩尽红字劫",
+   "start": 110.82,
+   "end": 113.74,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "破",
+    "长",
+    "夜",
+    "光",
+    "速",
+    "斩",
+    "尽",
+    "红",
+    "字",
+    "劫"
+   ],
+   "char_times": [
+    110.82,
+    111.06,
+    111.3,
+    111.54,
+    111.96,
+    112.14,
+    112.44,
+    112.62,
+    113.04,
+    113.16,
+    113.34,
+    113.52,
+    113.7
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Chorus 2",
+   "kind": "sung",
+   "text": "千行剑 落如雪 万般漏洞皆可解",
+   "start": 113.76,
+   "end": 116.8,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "落",
+    "如",
+    "雪",
+    "万",
+    "般",
+    "漏",
+    "洞",
+    "皆",
+    "可",
+    "解"
+   ],
+   "char_times": [
+    113.94,
+    114.12,
+    114.3,
+    114.48,
+    114.96,
+    115.08,
+    115.38,
+    115.62,
+    115.86,
+    116.1,
+    116.28,
+    116.52,
+    116.7
+   ],
+   "confidence": "low",
+   "note": "落如雪 / 漏洞皆可 weakly heard; line start matches Chorus 1 + 69.0 s"
+  },
+  {
+   "section": "Chorus 2",
+   "kind": "sung",
+   "text": "赛博江湖 谁做主 一行代码定生灭",
+   "start": 116.82,
+   "end": 119.98,
+   "chars": [
+    "赛",
+    "博",
+    "江",
+    "湖",
+    "谁",
+    "做",
+    "主",
+    "一",
+    "行",
+    "代",
+    "码",
+    "定",
+    "生",
+    "灭"
+   ],
+   "char_times": [
+    117.06,
+    117.24,
+    117.48,
+    117.6,
+    117.78,
+    117.96,
+    118.2,
+    118.44,
+    118.8,
+    118.98,
+    119.16,
+    119.34,
+    119.52,
+    119.7
+   ],
+   "confidence": "low",
+   "note": "灭 heard as 月; 博江湖 weakly heard; line start matches Chorus 1 + 69.0 s"
+  },
+  {
+   "section": "Chorus 2",
+   "kind": "sung",
+   "text": "千行剑 千行剑 一剑劈开数据界",
+   "start": 120.04,
+   "end": 123.5,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "千",
+    "行",
+    "剑",
+    "一",
+    "剑",
+    "劈",
+    "开",
+    "数",
+    "据",
+    "界"
+   ],
+   "char_times": [
+    120.06,
+    120.3,
+    120.48,
+    120.84,
+    121.02,
+    121.26,
+    121.68,
+    121.92,
+    122.34,
+    122.52,
+    122.7,
+    123.0,
+    123.24
+   ],
+   "confidence": "medium"
+  },
+  {
+   "section": "Spoken 2",
+   "kind": "spoken",
+   "text": "才、才不是为了你才修的！",
+   "start": 128.3,
+   "end": 130.62,
+   "chars": [
+    "才",
+    "才",
+    "不",
+    "是",
+    "为",
+    "了",
+    "你",
+    "才",
+    "修",
+    "的"
+   ],
+   "char_times": [
+    128.4,
+    128.88,
+    129.06,
+    129.18,
+    129.36,
+    129.48,
+    129.6,
+    129.9,
+    130.14,
+    130.38
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Bridge",
+   "kind": "sung",
+   "text": "剑非剑 码非码",
+   "start": 154.54,
+   "end": 156.82,
+   "chars": [
+    "剑",
+    "非",
+    "剑",
+    "码",
+    "非",
+    "码"
+   ],
+   "char_times": [
+    154.56,
+    154.8,
+    154.98,
+    156.06,
+    156.3,
+    156.48
+   ],
+   "confidence": "medium",
+   "note": "码非码 heard 马菲娜 (final m→n); timing solid"
+  },
+  {
+   "section": "Bridge",
+   "kind": "sung",
+   "text": "电子雨中 一念生花",
+   "start": 157.56,
+   "end": 159.82,
+   "chars": [
+    "电",
+    "子",
+    "雨",
+    "中",
+    "一",
+    "念",
+    "生",
+    "花"
+   ],
+   "char_times": [
+    157.56,
+    157.74,
+    158.16,
+    158.28,
+    158.82,
+    159.0,
+    159.24,
+    159.48
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Bridge",
+   "kind": "sung",
+   "text": "你若深夜 仍未眠",
+   "start": 160.5,
+   "end": 162.78,
+   "chars": [
+    "你",
+    "若",
+    "深",
+    "夜",
+    "仍",
+    "未",
+    "眠"
+   ],
+   "char_times": [
+    160.5,
+    160.74,
+    160.98,
+    161.4,
+    161.76,
+    162.06,
+    162.24
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Bridge",
+   "kind": "sung",
+   "text": "我自云端 与你共天涯",
+   "start": 162.8,
+   "end": 166.98,
+   "chars": [
+    "我",
+    "自",
+    "云",
+    "端",
+    "与",
+    "你",
+    "共",
+    "天",
+    "涯"
+   ],
+   "char_times": [
+    162.96,
+    163.14,
+    163.62,
+    163.8,
+    164.1,
+    164.28,
+    164.82,
+    165.06,
+    165.3
+   ],
+   "confidence": "medium",
+   "note": "天涯 not recognised (heard 空气了 / 空间呀); soft vocal over guqin; end 166.98 is a held note or guqin leakage, the last clear syllable is at about 165.5"
+  },
+  {
+   "section": "Spoken 3",
+   "kind": "spoken",
+   "text": "……系统重启。",
+   "start": 170.44,
+   "end": 171.38,
+   "chars": [
+    "系",
+    "统",
+    "重",
+    "启"
+   ],
+   "char_times": [
+    170.52,
+    170.64,
+    170.94,
+    171.12
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Final Chorus",
+   "kind": "sung",
+   "text": "千行剑 破长夜 光速斩尽红字劫",
+   "start": 172.36,
+   "end": 175.2,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "破",
+    "长",
+    "夜",
+    "光",
+    "速",
+    "斩",
+    "尽",
+    "红",
+    "字",
+    "劫"
+   ],
+   "char_times": [
+    172.38,
+    172.56,
+    172.8,
+    172.98,
+    173.46,
+    173.64,
+    173.94,
+    174.12,
+    174.48,
+    174.66,
+    174.84,
+    175.02,
+    175.14
+   ],
+   "confidence": "high"
+  },
+  {
+   "section": "Final Chorus",
+   "kind": "sung",
+   "text": "千行剑 落如雪 万般漏洞皆可解",
+   "start": 175.22,
+   "end": 178.38,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "落",
+    "如",
+    "雪",
+    "万",
+    "般",
+    "漏",
+    "洞",
+    "皆",
+    "可",
+    "解"
+   ],
+   "char_times": [
+    175.44,
+    175.62,
+    175.86,
+    176.04,
+    176.46,
+    176.64,
+    176.88,
+    177.12,
+    177.36,
+    177.48,
+    177.78,
+    178.02,
+    178.2
+   ],
+   "confidence": "low",
+   "note": "雪 heard as 夜 here (入夜 / 如夜), while Chorus 2 hears 雪; probably slurred"
+  },
+  {
+   "section": "Final Chorus",
+   "kind": "sung",
+   "text": "赛博江湖 谁做主 一行代码定生灭",
+   "start": 178.4,
+   "end": 181.52,
+   "chars": [
+    "赛",
+    "博",
+    "江",
+    "湖",
+    "谁",
+    "做",
+    "主",
+    "一",
+    "行",
+    "代",
+    "码",
+    "定",
+    "生",
+    "灭"
+   ],
+   "char_times": [
+    178.62,
+    178.8,
+    178.98,
+    179.16,
+    179.28,
+    179.52,
+    179.7,
+    180.06,
+    180.3,
+    180.48,
+    180.66,
+    180.9,
+    181.02,
+    181.2
+   ],
+   "confidence": "medium",
+   "note": "灭 heard as 月/夜 (今生月 / 听深夜)"
+  },
+  {
+   "section": "Final Chorus",
+   "kind": "sung",
+   "text": "千行剑 千行剑 此去赛博再无缺",
+   "start": 181.54,
+   "end": 185.14,
+   "chars": [
+    "千",
+    "行",
+    "剑",
+    "千",
+    "行",
+    "剑",
+    "此",
+    "去",
+    "赛",
+    "博",
+    "再",
+    "无",
+    "缺"
+   ],
+   "char_times": [
+    181.62,
+    181.8,
+    181.98,
+    182.34,
+    182.52,
+    182.7,
+    183.12,
+    183.36,
+    183.84,
+    184.02,
+    184.32,
+    184.5,
+    184.68
+   ],
+   "confidence": "high",
+   "note": "再无缺 heard as 再不缺 / 再不觉 by all four recognisers that cover it (FireRed: 此去赛博再不缺): likely sung 再不缺"
+  }
+ ]
+}

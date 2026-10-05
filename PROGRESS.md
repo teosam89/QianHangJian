@@ -12,8 +12,28 @@ into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session 
 - [x] Visual direction locked in the cloud session (2026-10-05): 「墨底霓虹」, an ink-wash and neon world with a bright,
       cel-shaded idol character; palette, character 千行 v2, sword, generation rules, a per-section plan, fonts
       (`STYLE_BIBLE.md`)
-- [ ] `DESIGN.md`: the concept decisions (theme, story, song, format, length, platform) are not written down, and the
-      owner's notes from the cloud chat are not in the repo
+- [ ] `DESIGN.md`: the concept decisions (theme, story, song, format, length, platform) are not written down yet;
+      the grilling rounds below are the record until it is
+- [x] MV grilling, round 1 (cloud, 2026-10-05). Owner: 「是最终版,其实tokentoken可以为效果 因为他是最后一期产出的也是流量工程最精致的
+      / b / 我更喜欢看下tokentoken的模板设计思路 / b，如果需要建立伪3d 可以接入blender / 请你先看歌曲 / a」 → the mp3 is
+      the final take with the lyrics unchanged; tokentoken is the bar to reach; story b (the fight runs in the code
+      jianghu and the bridge cuts once to reality: a programmer still awake at a night desk); engine question replaced
+      by a study of tokentoken's template (`../tokentoken/DESIGN.md`, `STORYBOARD.md`); motion b (layered cut-outs,
+      Grok first-frame video only for a few action shots; Blender allowed for pseudo-3D); the opening waits for the song
+      analysis; lyrics a (an ink-brush underlay; 得意黑 slammed in per character in the verses, calligraphy in the
+      choruses, speech bubbles for the spoken lines)
+- [x] MV grilling, round 2 (cloud, 2026-10-05), built on tokentoken's template. Owner: 「a, 封面菜单ERROR我要去掉，感觉不美观
+      / b这点需要学习skill 有什么打斗skill 2d美观的 pv的那种感觉，也可以参a / c但是需要你接mcp渲染 / a / a / a」 →
+      - props a: real programmer artifacts (stack traces, terminal, git, tests, CI, the Enter key, thread monitor, POST),
+        with wuxia as their skin; the `ERROR ×999+ -> 0` egg is removed from every cover (code and `prompts/cover.md`)
+      - story curve b: only how red the city is, no counter on screen; the owner wants a 2D, PV-style fight look and
+        allows borrowing from a (error visuals without a running number)
+      - characters c: chibi only, no full-proportion poses in the MV; the owner asks for the generation to be hooked up
+        (open: how, see the cloud chat)
+      - chorus space a: WebGL only, tokentoken's station journey with a sword formation (no Blender)
+      - payoff a: the last chorus line is rewritten git-diff style, 「一剑劈开数据界」 → 「此去赛博再无缺」
+      - bridge a: ink monochrome on the guqin, a cut to the real night desk, the error beep stops the city dead, it
+        falls to terminal text (POST), and after 「系统重启」 it decodes back into colour for the final chorus
 - [ ] Check these parts of the plan against the owner's rules (PLAYBOOK §3) with the owner:
       - the Intro opens on a build-up (black-screen glitch, then the city panorama and a back view); the rule is to
         open on the strongest moment
@@ -23,16 +43,23 @@ into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session 
 
 ## Phase 2 — Song
 
-- [ ] The song is not in the repo: no `song.md`, no lyrics, no mp3. STYLE_BIBLE §6 implies it exists: a sweet
-      virtual-singer vocal; intro, verse 1, pre-chorus, chorus, spoken 「哼」, drop, verse 2, spoken 「才不是」, bridge,
-      stop, a final chorus with a key change, an outro with a gong
-- [ ] The owner put `music_164638153048065_5xodPGUjhEZAjhMx8uAuYN_jzalsv.mp3` (3:31, 256 kb/s, no tags) into this
-      folder on 2026-10-05; taken to be the song until the owner confirms. Then rename it (PLAYBOOK §4.1) and keep it
-      out of git
+- [x] `song.md`: the final take and the lyrics with section tags. Owner: 「是最终版」
+- [ ] Rename `music_164638153048065_5xodPGUjhEZAjhMx8uAuYN_jzalsv.mp3` (PLAYBOOK §4.1) and keep it out of git
 
 ## Phase 3 — Analysis
 
-- [ ] `beats.json`, transcript, per-character lyric times (`../moren/tools/`)
+- [x] `song/timeline.json` (cloud, 2026-10-05): 160.0 BPM (not 161.5: every 24 s window fits 159.9–160.1), bar b
+      starts at 0.465 + 1.5·b s, 140 bars, 210.95 s; 19 sections with bar ranges; 18 hard hits; 39 lines with
+      per-character times (CTC forced alignment over SenseVoice, checked against four other recognisers; Chorus 2 and
+      the Final Chorus match Chorus 1 + 69.0 s and + 130.5 s on every line). Findings that change the plan:
+      - no key change in the final chorus: the sung pitch is identical to Chorus 1, so the lift has to come from the
+        picture
+      - a hard slam lands on 劈 in 「一剑劈开」 (53.32, 122.33) and on 赛 in 「此去赛博」 (183.85): the payoff hit
+      - Verse 2 goes double-time at 96.47: its last four lines are about 1.5 s each
+      - the two instrumental drops are 16 bars (24 s) each with no vocals; the outro is 16 bars plus a gong at 208.98
+      - the stop: error beep 168.02–169.97, a low hit, near-silence, 「……系统重启。」 170.44–171.38, near-silence,
+        a slam at 171.48, the final chorus pickup at 172.36
+      The analysis scripts and stems stayed in the cloud scratchpad (not in git)
 
 ## Phase 4 — Storyboard
 

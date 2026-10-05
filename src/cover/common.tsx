@@ -23,8 +23,6 @@ export const ASSET = {
 export const assetSrc = (name: string): string | null =>
   getStaticFiles().some((f) => f.name === name) ? staticFile(name) : null;
 
-export const EGG = "ERROR ×999+ -> 0";
-
 // 白字：贴字一圈暗边保证可读，外面是青色辉光
 export const neonGlow = (r: number) =>
   `0 0 ${r * 1.2}px rgba(11,11,16,0.95), 0 0 ${r}px rgba(25,240,200,0.95), 0 0 ${r * 3}px rgba(25,240,200,0.6), 0 0 ${r * 7}px rgba(25,240,200,0.3)`;
@@ -126,25 +124,6 @@ export const Vignette: React.FC<{ strength?: number }> = ({ strength = 0.55 }) =
       pointerEvents: "none",
     }}
   />
-);
-
-export const Egg: React.FC = () => (
-  <div
-    style={{
-      position: "absolute",
-      left: W * 0.028,
-      top: H * 0.04,
-      fontFamily: FONT.code,
-      fontWeight: 700,
-      fontSize: H * 0.03,
-      color: C.red,
-      background: "rgba(11,11,16,0.82)",
-      padding: `${H * 0.006}px ${H * 0.014}px`,
-      textShadow: `${H * 0.0025}px 0 rgba(25,240,200,0.9), ${-H * 0.0025}px 0 rgba(232,56,31,0.6)`,
-    }}
-  >
-    {EGG}
-  </div>
 );
 
 // 红色报错碎片：沿一条线或从一个点往外飞

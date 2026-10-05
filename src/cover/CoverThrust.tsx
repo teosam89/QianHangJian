@@ -6,8 +6,6 @@ import { Seal } from "../Seal";
 import {
   ASSET,
   CharacterLayer,
-  Egg,
-  EGG,
   H,
   PaperGrain,
   Placement,
@@ -212,7 +210,6 @@ export const CoverThrust: React.FC = () => {
   useFontsReady([
     { family: FONT.title, text: TITLE + "赛博江湖" },
     { family: FONT.spoken, text: HOOK.join("") },
-    { family: FONT.code, text: EGG, weight: 700 },
     { family: FONT.verse, text: placeholderLabel(ASSET.thrustChar, CHAR_SPEC) },
   ]);
   const title = H * 0.15;
@@ -255,7 +252,6 @@ export const CoverThrust: React.FC = () => {
       </div>
 
       <Bubble fontSize={title * 0.55} />
-      <Egg />
       <PaperGrain />
     </AbsoluteFill>
   );

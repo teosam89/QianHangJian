@@ -7,8 +7,6 @@ import {
   ASSET,
   BackgroundLayer,
   CharacterLayer,
-  Egg,
-  EGG,
   GlitchBlocks,
   H,
   PaperGrain,
@@ -69,7 +67,6 @@ export const CoverSplit: React.FC = () => {
   useFontsReady([
     { family: FONT.title, text: TITLE + "赛博江湖" },
     { family: FONT.bridge, text: HOOK, weight: 700 },
-    { family: FONT.code, text: EGG, weight: 700 },
     {
       family: FONT.verse,
       text:
@@ -152,7 +149,6 @@ export const CoverSplit: React.FC = () => {
         </div>
       </div>
 
-      <Egg />
       <PaperGrain />
     </AbsoluteFill>
   );

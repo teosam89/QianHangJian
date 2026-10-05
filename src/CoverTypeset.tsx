@@ -9,7 +9,6 @@ export type CoverTypesetProps = { background: string };
 
 const TITLE = "千行剑";
 const HOOK = "一剑劈开数据界";
-const EGG = "ERROR ×999+ -> 0";
 
 // 画布尺寸跟着封面图走，方形和 16:9 都能直接套
 export const calculateCoverMetadata: CalculateMetadataFunction<CoverTypesetProps> = async ({ props }) => {
@@ -28,31 +27,12 @@ export const CoverTypeset: React.FC<CoverTypesetProps> = ({ background }) => {
   useFontsReady([
     { family: FONT.title, text: TITLE + "赛博江湖" },
     { family: FONT.bridge, text: HOOK, weight: 500 },
-    { family: FONT.code, text: EGG, weight: 700 },
   ]);
   const title = H * 0.13;
 
   return (
     <AbsoluteFill>
       <Img src={staticFile(background)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-
-      {/* 彩蛋：左上红色区，像一条终端报错 */}
-      <div
-        style={{
-          position: "absolute",
-          left: W * 0.03,
-          top: H * 0.035,
-          fontFamily: FONT.code,
-          fontWeight: 700,
-          fontSize: H * 0.03,
-          color: C.red,
-          background: "rgba(11,11,16,0.82)",
-          padding: `${H * 0.006}px ${H * 0.014}px`,
-          textShadow: `${H * 0.0025}px 0 rgba(25,240,200,0.9), ${-H * 0.0025}px 0 rgba(232,56,31,0.6)`,
-        }}
-      >
-        {EGG}
-      </div>
 
       {/* 题字：右下水墨区，标题和钩子句竖排，印章盖在标题下方 */}
       <div
