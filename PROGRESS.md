@@ -34,6 +34,19 @@ into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session 
       - payoff a: the last chorus line is rewritten git-diff style, 「一剑劈开数据界」 → 「此去赛博再无缺」
       - bridge a: ink monochrome on the guqin, a cut to the real night desk, the error beep stops the city dead, it
         falls to terminal text (POST), and after 「系统重启」 it decodes back into colour for the final chorus
+- [x] MV grilling, round 3 (cloud, 2026-10-05), after the song analysis. Owner: 「b, a, a, b(把需要的东西写给我，输出在这里）」,
+      then the full lyrics with 「这是歌词，跟着歌词走渲染」 and 「c自己设计，storm是个十分严重的失败品」 →
+      - opening b: strictly chibi; on the first suona hit (0.30 s) chibi 千行 slashes the black screen open onto the red
+        city. The full-proportion one-shot stays on the cover only
+      - drops a: Drop 1 is a crowd fight against the hacker tide, Drop 2 a boss fight against a beast made of red error
+        text (红字劫); every slash pushes the city's red back
+      - outro a: back at the real desk, every test passes, chibi 千行 sits on the screen edge as a desktop pet and waves;
+        the gong stamps the seal 「赛博江湖」, then black
+      - art b: Claude writes the prompts, the owner generates by hand in ChatGPT and pushes the PNGs (`prompts/chibi.md`)
+      - on-screen lyrics follow the written lyrics in `song.md`, so the payoff reads 「此去赛博再无缺」 (the recognisers
+        hear 再不缺)
+      - fights c: Claude designs them; storm (`../storm/`) is not to be reused
+      - no Grok image-to-video: all motion is code (proposed in the chat, no objection)
 - [ ] Check these parts of the plan against the owner's rules (PLAYBOOK §3) with the owner:
       - the Intro opens on a build-up (black-screen glitch, then the city panorama and a back view); the rule is to
         open on the strongest moment
