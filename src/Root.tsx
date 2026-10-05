@@ -5,11 +5,15 @@ import { CoverTypeset, calculateCoverMetadata } from "./CoverTypeset";
 import { CoverSplit } from "./cover/CoverSplit";
 import { CoverThrust } from "./cover/CoverThrust";
 import { CoverSwords } from "./cover/CoverSwords";
+import { CoverInk, CoverInkTall } from "./cover/CoverInk";
 import { H, W } from "./cover/common";
 
 export const RemotionRoot: React.FC = () => (
   <>
     <Still id="FontSpecimen" component={FontSpecimen} width={1920} height={SPECIMEN_HEIGHT} />
+    {/* The cover in MOREN's layout: landscape for Bilibili and Douyin, 3:4 for Douyin's profile grid */}
+    <Still id="CoverInk" component={CoverInk} width={2560} height={1440} />
+    <Still id="CoverInkTall" component={CoverInkTall} width={1080} height={1440} />
     {/* 三张候选封面：分层素材放进 public/cover/，缺的图会自动画成占位 */}
     <Still id="CoverSplit" component={CoverSplit} width={W} height={H} />
     <Still id="CoverThrust" component={CoverThrust} width={W} height={H} />
