@@ -89,6 +89,81 @@ Floating mid-air at the instant a huge diagonal slash finishes: cybernetic right
 - 除了标题和印章，最多再加这两行小字；字一多，缩略图里就看不清了。
 - **进阶**：把「剑」字最后那一笔（立刀旁的竖钩）拉长成一把剑，带青光。在 Figma 或 Illustrator 里把字转成轮廓，换掉那一笔，导出 SVG 给 Remotion 用。
 
+## 其他封面方案
+
+| 方案 | 卖点 | 最适合 | 对应 MV 段落 |
+|---|---|---|---|
+| 一剑劈开（上面） | 红青对撞，一眼看懂故事 | B站横版主封面 | 终副歌红转青 |
+| A 千剑阵 | 对称、有图腾感，就是"千行剑"的字面意思 | B站主封面、宣传主视觉 | 副歌、终副歌 |
+| B 破屏 | 冲击力最强，脸占画面大 | 抖音等竖版平台 | 念白「哼」 |
+| C 红龙压城 | 体量对比，史诗感 | 横版、预告 | 主歌「黑客如潮」 |
+| D 屏幕内外 | 有故事和情绪，程序员会心一笑 | B站（引人好奇点进来） | Bridge「你若深夜仍未眠」 |
+| E 水墨留白 | 在信息流里最不撞款，显得高级 | 音乐平台专辑封面（1:1） | Bridge、Outro |
+
+每条 prompt 都由三段拼成：**共用开头 + 方案正文 + 共用结尾**。参考图都是 ① 三视图 + ② 剑，`quality: high`。
+
+共用开头：
+
+```text
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character.
+```
+
+共用结尾：
+
+```text
+Strict palette: ink black #0B0B10, rice-paper white #EDE4D3, cinnabar red #E8381F, sword cyan #19F0C8. Modest framing: the camera never looks up the skirt. Keep the focal point inside the central square of the image. No text, no letters, no logos, no watermark.
+```
+
+### A 千剑阵
+
+`3840×2160`。标题横排放在底部正中，白字加青光。
+
+```text
+Iconic symmetrical key visual. She floats in the exact center facing the viewer with a calm, confident little smirk, the oversized glass sword held upright in her cybernetic right hand beside her face. Behind her, a thousand floating glass swords form a vast circular halo in concentric rings, every blade pointing outward and glowing cyan from a line of code-like light inside. The outermost ring is still corrupted, its swords cracked and glitching red, turning cyan toward the center. Far below lies the rain-soaked ink-wash cyber-wuxia city; red error fragments fall through the night sky like rain. Camera straight-on at her chest height, perfect symmetry, her face at the exact center of the halo. Keep the bottom fifth of the image calm and dark for the title. Bright clean anime idol character with crisp cel shading, painterly ink-wash environment.
+```
+
+Remotion：剑阵可以单独出一张透明底，在 MV 里让它慢慢转，角色叠在上面。
+
+### B 破屏
+
+`2160×3840` 竖版。标题横排放在顶部暗处，钩子句放在底部。
+
+```text
+Extreme foreshortening: she lunges straight at the viewer and the tip of the glass sword pierces the camera lens. The sword point is huge in the foreground at the center of the frame, the blade receding toward her just beside her face, so her face stays clear. The screen glass cracks outward from the tip in a spiderweb of cyan light. Her face is in sharp focus: one eye narrowed, a cocky smirk, the monocle glinting. Shards of red glitch blow past her toward the viewer. The background melts into dark rain and red neon bokeh. Camera at her eye level. Keep the top fifth of the image darker for the title. Bright clean anime idol character with crisp cel shading, shallow depth of field.
+```
+
+Remotion：想精确控制裂纹的位置和大小，就把 prompt 里讲裂纹的那句删掉，另出一张黑底白裂纹，用 `mix-blend-mode: screen` 叠上去。
+
+### C 红龙压城
+
+`3840×2160`。标题竖排放在左下角，白字加青光。
+
+```text
+Epic scale contrast. A colossal dragon made of corrupted red data (glitch blocks, broken code fragments, red warning light) coils over the whole neon cyber-wuxia city at night, its enormous head lowered toward the center with glowing red eyes, filling the upper two thirds of the sky. On the tip of the tallest pagoda roof in the middle, she stands small but sharply lit, seen from behind at a three-quarter angle with her face turned slightly back in profile, sword raised toward the dragon. Her cyan blade is the single brightest point in the image, its light cutting a thin line into the red. Hair and the long red ribbon whip in the storm wind; heavy rain, red lightning in the clouds. Camera slightly above her shoulder height, looking past her toward the dragon. Keep the lower-left corner calmer and darker for the title. Bright clean anime idol character with crisp cel shading, ink-wash city, dramatic cinematic lighting.
+```
+
+这个方案用体量换掉了大脸，缩略图里靠的是红色大块里那一点青光，所以那道剑光一定要是全图最亮的地方。
+
+### D 屏幕内外
+
+`3840×2160`。标题竖排放在右侧三分之一，白字加青光。
+
+```text
+A dark bedroom at 3 a.m., rain streaking the window. In the foreground, the shoulders and back of a programmer slumped at a desk, a dark silhouette seen from behind, face not visible. The monitor in front of them glows cyan and is covered in red error pop-up windows (blank, no readable text). She leans out of the monitor as if it were a window, her upper body emerging into the room, one hand gripping the edge of the screen, the glass sword resting on her shoulder, looking down at the programmer with a teasing smirk and faintly pink cheeks. Cyan code-light and a few raindrops spill out of the screen into the room. The room is in deep ink-black shadow; the only light comes from the cyan monitor and the red error windows. Camera at desk height just behind the programmer's shoulder. Keep the right third darker for the title. Bright clean anime idol character with crisp cel shading; the room in a moody painterly style.
+```
+
+Remotion：报错弹窗留空，在 Remotion 里贴上真实的报错文字（JetBrains Mono），MV 里还能做成一个个弹出来的动画。
+
+### E 水墨留白
+
+`2048×2048`。标题是画面主角：马善政楷书大字竖排放在右半边，墨黑色，下面盖朱砂印章。
+
+```text
+Minimal Chinese ink-painting poster on aged rice paper (#EDE4D3), about 60% empty negative space. A single enormous dry-brush ink stroke sweeps diagonally across the paper like a sword slash, flinging ink droplets. She leaps through the stroke mid-slash, side view facing right, her figure painted in monochrome ink wash with brush-pen lineart while her face and design stay recognizable. The only colors in the whole image are her cinnabar-red ribbon and sword tassel and the glowing cyan glass sword. Faint ink-wash pagoda silhouettes and mist in the far lower distance. Calm, elegant, high-end poster feel. Camera at her chest height. Keep the right half almost empty for a large calligraphy title.
+```
+
+Remotion：那一笔墨迹可以单独出一张白底黑墨，当遮罩用，在 MV 里做"一笔扫过、画面显影"的转场。
+
 ## 发布前检查
 
-把封面缩到 320 像素宽，看三件事：脸看得清、标题认得出、红青两半一眼分得开。
+把封面缩到 320 像素宽，看三件事：脸或主体剪影看得清、标题认得出、红和青一眼分得开。
