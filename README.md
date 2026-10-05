@@ -1,6 +1,6 @@
 # 千行剑 MV
 
-视觉规范见 [STYLE_BIBLE.md](STYLE_BIBLE.md)，出图提示词在 [prompts/](prompts/)。
+视觉规范见 [STYLE_BIBLE.md](STYLE_BIBLE.md)，出图提示词在 [prompts/](prompts/)，参考图怎么喂见 [prompts/feeding.md](prompts/feeding.md)。参考图放在 `refs/`。
 
 ## 渲染
 

@@ -2,7 +2,39 @@
 
 规则、标志特征和左右检查见 [STYLE_BIBLE.md](../STYLE_BIBLE.md)。出图顺序：① 三视图 → ② 剑 → ③ 表情 → ④ 姿势。① 和 ② 可以同时出。
 
-## ① 三视图（母图）
+## ⓪ 已经有满意的封面：从封面反推
+
+角色和剑以封面为准，比按文字从头出更容易和封面对上。反推出来的图要先按 STYLE_BIBLE 第 3 节检查标志特征和左右，再存进 `refs/`。参考图顺序和喂法见 [feeding.md](feeding.md)。
+
+### ⓪-1 反推三视图 → `refs/01-turnaround.png`
+
+`2560×1440` · `quality: high` · 参考图：封面
+
+```text
+Create a character turnaround reference sheet of the character in the reference image. Keep her face, hairstyle, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit and colors exactly as in the reference; only change the pose and the background. Add white fitted shorts under the skirt, and make her white socks end just below the knees.
+
+LAYOUT: three full-body views of the SAME character side by side, evenly spaced, same scale and height, feet on one shared baseline: (1) front view, (2) side profile facing the right edge of the image, (3) back view. Relaxed neutral standing pose, arms slightly away from the body so the silhouette reads clearly. Every view fully inside the frame, including the ribbon tails, with margins on all sides.
+
+STYLE: same rendering as the reference: bright, clean anime idol illustration, crisp cel shading. Plain flat off-white rice-paper background (#EDE4D3), no scenery. Even neutral lighting with no colored cast; only the hair tips, monocle and arm seams glow cyan.
+
+No weapon. No text, labels, numbers, logos or watermark.
+```
+
+### ⓪-2 反推剑 → `refs/02-sword.png`
+
+`2048×1152` · `quality: high` · 参考图：封面
+
+```text
+Create a prop design sheet of the sword held by the character in the reference image. Keep its design exactly: translucent glass blade with glowing cyan code-like light inside, dark gunmetal crossguard shaped like the return-key arrow ⏎ with glowing cyan edges, grip wrapped in cinnabar-red cord, a long cinnabar-red tassel at the pommel.
+
+LAYOUT: the full sword laid horizontally across the image, point to the right, large and centered; below it, two close-up insets: the crossguard, and a section of the blade.
+
+STYLE: same rendering as the reference, crisp cel shading. Plain flat off-white rice-paper background (#EDE4D3), even neutral lighting; only the lines inside the blade glow.
+
+No hands, no character. No text, labels or watermark.
+```
+
+## ① 三视图（母图，没有封面时从文字出）
 
 `2560×1440` · `quality: high` · 参考图：无（不要传 v1 旧图）。先出 4 张，挑最好的一张。
 
@@ -35,7 +67,7 @@ LAYOUT: the full sword laid horizontally across the image, point to the right, l
 
 DESIGN:
 - Blade: straight double-edged Chinese jian made of translucent glass-like crystal; thin glowing cyan (#19F0C8) lines and abstract code-like light glyphs flow inside it (unreadable, no real letters).
-- Crossguard: pearl-white metal shaped like the return-key arrow symbol ⏎, with glowing cyan edges.
+- Crossguard: dark gunmetal shaped like the return-key arrow symbol ⏎, with glowing cyan edges.
 - Grip: wrapped in cinnabar-red (#E8381F) cord in a diamond pattern.
 - Pommel: a small round jade disc with a long cinnabar-red tassel hanging from it.
 
@@ -46,7 +78,7 @@ No text, labels or watermark.
 
 ## ③ 表情
 
-`2048×2048` · `quality: high` · 参考图：① 三视图
+`1920×1920` · `quality: high` · 参考图：① 三视图
 
 ```text
 Expression sheet of the character in the reference image. Keep the face, hairstyle, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, outfit and colors exactly as in the reference.
