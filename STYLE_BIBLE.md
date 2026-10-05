@@ -144,4 +144,6 @@ Chinese cyber-wuxia background illustration, no characters. Environments painted
 
 ## 9. 封面
 
+定稿是三张候选，都是 B站横版 16:9、分层出图：一剑劈开（`CoverSplit`）、剑指镜头（`CoverThrust`）、千剑齐发（`CoverSwords`）。8 张图的出图清单和 prompt 见 [prompts/cover.md](prompts/cover.md) 开头。下面是最早的概念。
+
 概念「一剑劈开」：一道青色斩线把整张图斜着劈成两半，左上是被红色报错淹没的城，右下是修好的青色水墨城，千行在斩线正中回头坏笑。封面用的就是终副歌"红转青"那一刻。角色的脸放在画面中间那块正方形里，标题竖排放在右下角的水墨区，像国画题字。另有五个备选方案：千剑阵、破屏、红龙压城、屏幕内外、水墨留白。提示词、字体排版和合成步骤见 [prompts/cover.md](prompts/cover.md)。

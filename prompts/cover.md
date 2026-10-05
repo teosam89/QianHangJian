@@ -1,5 +1,135 @@
 # 封面提示词
 
+## 定稿：三张候选（分层出图）
+
+用 grilling 定下来的方案。三张都是 B站横版 16:9，都是 MV 里的一帧；背景和角色分开出，在 Remotion 里合成。
+
+| 封面 | Remotion | MV 时刻 | 钩子句 | 字的位置 |
+|---|---|---|---|---|
+| 一剑劈开 | `CoverSplit` | 终副歌红转青 | 一剑劈开数据界 | 右下水墨区，竖排墨黑字，加印章 |
+| 剑指镜头 | `CoverThrust` | 念白「哼，就这点报错？」 | 哼，就这点报错？（念白气泡） | 标题竖排放左侧三分之一，白字加青光；气泡在右上 |
+| 千剑齐发 | `CoverSwords` | 终副歌 | 万般漏洞皆可解 | 底部正中横排白字加青光，印章在右边 |
+
+三张都在左上角放彩蛋 `ERROR ×999+ → 0`。钩子句字号约为标题的六成，缩到 320 像素宽也能读。
+
+### 出图清单（8 张，放进 `public/cover/`）
+
+| # | 文件 | 封面 | 内容 | 参考图（按顺序） | 尺寸 | 背景 |
+|---|---|---|---|---|---|---|
+| 1 | `split-bg-clean.png` | 一剑劈开 | 修好的水墨城 | 3 | 2560×1440 | 不透明 |
+| 2 | `split-bg-corrupt.png` | 一剑劈开 | 同一座城被报错淹没 | 第 1 张出好的图 | 2560×1440 | 不透明 |
+| 3 | `split-char.png` | 一剑劈开 | 半身回头坏笑 | 1、2、3 | 1920×1920 | 透明 |
+| 4 | `thrust-char.png` | 剑指镜头 | 胸像前刺，剑尖在正中 | 1、2、3，可加 4 | 1920×1920 | 透明 |
+| 5 | `thrust-crack.png` | 剑指镜头 | 黑底白色玻璃裂纹（可选） | 无 | 2560×1440 | 不透明 |
+| 6 | `swords-bg.png` | 千剑齐发 | 雨夜水墨城上空，红色报错如雨 | 3 | 2560×1440 | 不透明 |
+| 7 | `swords-char.png` | 千剑齐发 | 半身正面挥手 | 1、2、3 | 1920×1920 | 透明 |
+| 8 | `sword-single.png` | 千剑齐发 | 单把剑，竖直、剑尖朝上（可选） | 2 | 1152×2048 | 透明 |
+
+参考图编号见 [feeding.md](feeding.md)：1 三视图、2 剑、3 封面风格图、4 表情。`quality` 都用 `high`；透明底要加 `background: "transparent"` 和 `output_format: "png"`。
+
+缺哪张图，Remotion 就在那个位置画占位并标出文件名，所以可以出一张、放一张、渲染看一张。
+
+### 渲染
+
+```bash
+npx remotion still CoverSplit out/CoverSplit.png
+npx remotion still CoverThrust out/CoverThrust.png
+npx remotion still CoverSwords out/CoverSwords.png
+```
+
+角色层是 1920×1920 的正方形。它在画面里的位置和大小写在各自文件开头的 `PLACE` 里（`src/cover/`），占位时会画出脸的位置。真图放进来后，如果脸和占位圈没对上，就改 `PLACE` 的 `x`、`y`、`size`。
+
+### 1 `split-bg-clean.png`
+
+`2560×1440` · 参考图：3 · 不透明底
+
+```text
+Match the rendering style and color grading of the reference image, but draw no characters and do not copy its composition.
+
+Chinese cyber-wuxia background illustration, no characters. Environments painted as Chinese ink wash on rice paper with an anime background-art finish: dry-brush texture, mist and rain; traditional pagodas, archways and upturned eaves merged with cyber megastructures and holographic lanterns. Neon appears only as light sources and thin glowing lines; signboards are blank glowing panels. Strict palette: ink black #0B0B10, rice-paper white #EDE4D3, cinnabar red #E8381F, sword cyan #19F0C8. High contrast, cinematic composition. No text, no letters, no logos, no watermark.
+
+Wide view of the rain-soaked cyber-wuxia city at night, calm and restored: pagoda rooftops, archways and upturned eaves merged with cyber megastructures, waterfalls and misty cliffs, clean cyan neon lines. Camera at chest height looking slightly up. Keep the center open for a waist-up character, and keep the lower right calm and light for a vertical calligraphy title.
+```
+
+### 2 `split-bg-corrupt.png`
+
+`2560×1440` · 参考图：第 1 张出好的图 · 不透明底。用编辑接口，把它当第一张参考图。
+
+```text
+Edit the reference image. Keep exactly the same city, composition and camera angle, but make it corrupted: drowned in cinnabar-red (#E8381F) glitch blocks, broken data fragments, red warning light and scan-line distortion. Do not add any text.
+```
+
+### 3 `split-char.png`
+
+`1920×1920` · 参考图：1、2、3 · 透明底
+
+```text
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character. Match the rendering style, color grading and lighting of the third reference image, but do not copy its pose or camera angle.
+
+POSE: Waist-up, seen from behind at a three-quarter angle. She has just finished a huge diagonal slash; the oversized glass sword rests on her right shoulder, and she looks back over her left shoulder at the viewer (the monocle side of her face toward the viewer) with a cocky smirk and one eyebrow raised, the monocle glinting. Hair and the long red ribbon still whip from the swing. Strong cyan rim light on her silhouette from the lower left and a faint red glow from the upper left (lighting on the character only, no glow around her).
+FRAMING: waist-up, her head near the top center, the figure filling most of the square. Keep the hands, ribbon tails and sword inside the frame with small margins. Camera at her chest height. Modest framing: the camera never looks up the skirt.
+
+Bright, clean anime idol illustration, crisp cel shading. Isolated on a transparent background: no scenery, no ground shadow, no glow halos, motion trails or light effects, no text.
+```
+
+### 4 `thrust-char.png`
+
+`1920×1920` · 参考图：1、2、3，可加 4 · 透明底
+
+```text
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character. Match the rendering style, color grading and lighting of the third reference image, but do not copy its pose or camera angle.
+
+POSE: Chest-up, facing the viewer, she lunges straight at the camera with the glass sword thrust forward in her cybernetic right hand. The sword tip is huge and very close to the lens at the exact center of the image, the blade receding toward her in extreme foreshortening just beside her face, so her face stays clear. One eye narrowed, a cocky smirk, the monocle glinting. Hair and ribbon thrown forward by the lunge. Cyan light from the blade on her face and a faint red rim light from behind (lighting on the character only, no glow around her).
+FRAMING: chest-up, her face slightly right of center in the upper third of the square, the sword tip at the exact center.
+
+Bright, clean anime idol illustration, crisp cel shading. Isolated on a transparent background: no scenery, no ground shadow, no glow halos, motion trails or light effects, no text.
+```
+
+### 5 `thrust-crack.png`
+
+`2560×1440` · 参考图：无 · 不透明底。GPT 画的裂纹会盖到脸上。觉得挡脸，就不放这张，代码画的裂纹会自动避开脸。
+
+```text
+A spiderweb crack in a sheet of glass, seen straight on: thin bright white fracture lines radiating from a small impact point at the exact center of the image, with a few concentric broken rings and tiny glass chips near the impact. Pure black background, nothing else in the image, high contrast, sharp lines. No text.
+```
+
+### 6 `swords-bg.png`
+
+`2560×1440` · 参考图：3 · 不透明底
+
+```text
+Match the rendering style and color grading of the reference image, but draw no characters and do not copy its composition.
+
+Chinese cyber-wuxia background illustration, no characters. Environments painted as Chinese ink wash on rice paper with an anime background-art finish: dry-brush texture, mist and rain; traditional pagodas, archways and upturned eaves merged with cyber megastructures and holographic lanterns. Neon appears only as light sources and thin glowing lines; signboards are blank glowing panels. Strict palette: ink black #0B0B10, rice-paper white #EDE4D3, cinnabar red #E8381F, sword cyan #19F0C8. High contrast, cinematic composition. No text, no letters, no logos, no watermark.
+
+Night sky high above the rain-soaked ink-wash cyber-wuxia city: pagoda rooftops and thin cyan neon lines far below along the bottom edge, cinnabar-red error fragments falling through the dark sky like rain. The center of the sky is dark and empty (a character and a sword formation will be placed there). Camera at chest height looking straight ahead. Keep the bottom quarter dark and calm for a title.
+```
+
+### 7 `swords-char.png`
+
+`1920×1920` · 参考图：1、2、3 · 透明底
+
+```text
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character. Match the rendering style, color grading and lighting of the third reference image, but do not copy its pose or camera angle.
+
+POSE: Waist-up, facing the viewer straight on, perfectly centered and symmetrical. She sweeps her left arm out and up, palm open, as if commanding a thousand swords to fly forward; the glass sword is held upright in her cybernetic right hand beside her face. A confident smirk, eyes locked on the viewer. Hair and the long red ribbon lifted by a strong wind blowing from behind her toward the viewer. Strong cyan backlight from behind her and soft cyan fill on her face (lighting on the character only, no glow around her).
+FRAMING: waist-up, her head at the top center, the figure filling most of the square. Keep the hands, ribbon tails and sword inside the frame. Camera at her chest height. Modest framing: the camera never looks up the skirt.
+
+Bright, clean anime idol illustration, crisp cel shading. Isolated on a transparent background: no scenery, no ground shadow, no glow halos, motion trails or light effects, no text.
+```
+
+### 8 `sword-single.png`
+
+`1152×2048` · 参考图：2 · 透明底。不放这张时，剑阵用代码画的剑。
+
+```text
+Use the sword from the reference image exactly. A single sword standing perfectly vertical, point up, centered and filling the height of the frame, seen straight on with no perspective: translucent glass blade glowing softly from within with cyan code-like light, dark gunmetal crossguard shaped like the return-key arrow ⏎, grip wrapped in cinnabar-red cord, a red tassel hanging straight down. Bright, clean anime illustration with crisp cel shading. Isolated on a transparent background: no hands, no shadow, no glow halos, no text.
+```
+
+---
+
+以下是 grilling 之前的早期方案和备选，留作参考。
+
 ## 概念「一剑劈开」
 
 一道青色斩线从右上角到左下角，把整张图斜着劈成两半：左上是被红色报错淹没的城，右下是修好的青色水墨城。千行就在斩线正中，刚挥完剑，回头冲观众坏笑。

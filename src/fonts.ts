@@ -5,6 +5,7 @@ import "@fontsource/zcool-kuaile/400.css";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/700.css";
 import "@fontsource/lxgw-wenkai/500.css";
+import "@fontsource/lxgw-wenkai/700.css";
 import "@fontsource/fusion-pixel-12px-monospaced-sc/400.css";
 import "@chinese-fonts/dyh/dist/SmileySans-Oblique/result.css";
 import { useEffect, useState } from "react";
