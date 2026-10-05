@@ -1,5 +1,26 @@
 # 封面提示词
 
+## 一剑劈开：直接修原图（主封面推荐）
+
+原图的光影、纵深和动作张力，分层合成很难做出来。所以主封面直接修这张一次成图的原图，只改两处：裙底补上安全裤，方图扩成 16:9。下面"定稿：三张候选"里的分层合成，留给 MV 里要动起来的镜头。
+
+1. **准备文件**：运行 `python tools/cover_fix_prep.py <原图路径>`（需要 Pillow），文件会生成在 `out/edit/`。先看 `skirt-preview.png`：红色区域要盖住裙底，又不能碰到手和剑柄。位置不对，就改脚本开头的 `SKIRT`。
+2. **修裙底**：用 `images.edit`，`image` 传原图，`mask` 传 `out/edit/skirt-mask.png`，`size` 用 `auto`。
+
+   ```text
+   In the masked area only: she wears white fitted shorts under the pleated skirt, and the skirt hangs slightly lower, so nothing under the skirt is visible. Keep the pose, legs, lighting, colors and rendering style exactly the same. Do not change anything outside the masked area. No text.
+   ```
+
+3. **扩成 16:9**：用第 2 步修好的图重新运行一次脚本，然后用 `images.edit`：`image` 传 `out/edit/outpaint-canvas.png`，`mask` 传 `out/edit/outpaint-mask.png`，`size` 用 `2560x1440`。
+
+   ```text
+   Extend this illustration to a wide 16:9 composition. Fill only the empty areas on the left and right: continue the red corrupted city on the left and the calm ink-wash city with waterfalls on the right, and continue the diagonal cyan cut line and the red glitch shards along it, with the same rain, lighting and painting style. Do not change anything in the existing center area. No text, no letters, no logos, no watermark.
+   ```
+
+4. **加字**：把成品存成 `public/drafts/split-full.png`，然后运行 `npx remotion still CoverTypeset out/cover-final.png --props=tools/props-split-full.json`。注意：`CoverTypeset` 里的钩子句还是早期的小字号，之前定的"钩子句约为标题六成"还没改进去。
+
+在 ChatGPT 网页版里做的话：第 2 步用涂抹选区工具圈住裙底，再贴第 2 步的 prompt；第 3 步直接上传修好的图，让它扩成 16:9。网页版会重画整张图，细节可能会变。
+
 ## 定稿：三张候选（分层出图）
 
 用 grilling 定下来的方案。三张都是 B站横版 16:9，都是 MV 里的一帧；背景和角色分开出，在 Remotion 里合成。
