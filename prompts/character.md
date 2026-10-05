@@ -17,7 +17,7 @@ CHARACTER: Qianhang, a sword spirit who is also a virtual idol singer. An adult 
 - Hair: glossy black hair with a blue sheen, in a long bouncy high ponytail tied with a big cinnabar-red (#E8381F) ribbon bow; the two ribbon tails hang down to the knees. The last third of the ponytail fades into glowing cyan (#19F0C8) fiber-optic strands. Soft side bangs, two small cyan hair clips shaped like angle brackets < >.
 - Monocle + mic: a small translucent cyan HUD monocle over the LEFT eye; its thin white frame curves around the left ear and ends in a slim headset microphone near the mouth.
 - Right arm: slender, glossy pearl-white cybernetic arm from the shoulder down, with glowing cyan seam lines; the right shoulder is bare of fabric.
-- Outfit (modest idol-stage hanfu): white cross-collar top with cinnabar-red trim, the wearer's left panel over the right forming a "y" shape from the front; one wide flowing sleeve on the left arm only; black waist sash tied with a red cord knot; white pleated mamian-style skirt ending just above the knees, with pale cyan circuit-pattern embroidery along the hem; white knee-high socks; short white boots with cyan soles.
+- Outfit (modest idol-stage hanfu): white cross-collar top with cinnabar-red trim, the wearer's left panel over the right forming a "y" shape from the front; one wide flowing sleeve on the left arm only; black waist sash tied with a red cord knot; white pleated mamian-style skirt ending just above the knees, with pale cyan circuit-pattern embroidery along the hem and white fitted shorts underneath; white socks ending just below the knees; short white boots with cyan soles.
 
 STYLE: bright, clean anime idol illustration, crisp cel shading with clean lineart, saturated colors, soft colored shadows (not gray). Plain flat off-white rice-paper background (#EDE4D3), no scenery. Even neutral lighting; only the hair tips, monocle and arm seams glow cyan.
 
@@ -73,10 +73,10 @@ No text, labels, speech bubbles or manga symbols.
 把 `{POSE}` 换成下面某一条的内容，`{FRAMING}` 换成标题里的 `full body` 或 `waist-up`。
 
 ```text
-Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit and colors. Do not mirror the character.
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character.
 
 POSE: {POSE}
-FRAMING: {FRAMING}. Keep the hands, ribbon tails and sword tip inside the frame, with margins on all sides.
+FRAMING: {FRAMING}. Keep the hands, ribbon tails and sword tip inside the frame, with margins on all sides. Modest framing: the camera never looks up the skirt.
 
 Bright, clean anime idol illustration, crisp cel shading with clean lineart. Isolated on a transparent background: no scenery, no ground shadow, no glow halos, motion trails or light effects, no text.
 ```
@@ -96,7 +96,7 @@ Low ready stance, knees bent, three-quarter view facing left, sword held low at 
 ### 3 斜斩 · 副歌 / Drop · full body
 
 ```text
-Mid-slash, a diagonal cut from the upper right to the lower left of the frame, cybernetic right arm fully extended, body twisting, hair and ribbon whipping in an arc, dramatic foreshortening, seen from a low angle.
+Mid-slash, a diagonal cut from the upper right to the lower left of the frame, cybernetic right arm fully extended, body twisting, hair and ribbon whipping in an arc. Camera in front of her at chest height, dramatic foreshortening on the sword arm and sword.
 ```
 
 ### 4 冲刺 · Drop · full body
@@ -126,7 +126,7 @@ Sitting with legs dangling as if on a ledge (do not draw the ledge), hands resti
 ### 8 举剑向天 · 终副歌 · full body
 
 ```text
-Seen from a low angle, sword raised high overhead pointing at the sky in the cybernetic right hand, left hand open to the side, triumphant expression, hair and ribbon streaming upward.
+Front view from slightly below chest height, sword raised high overhead pointing at the sky in the cybernetic right hand, left hand open to the side, triumphant expression, hair and ribbon streaming upward.
 ```
 
 ### 9 唱歌 · 副歌 / 终副歌 · waist-up

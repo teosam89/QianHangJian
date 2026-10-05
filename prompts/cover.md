@@ -10,7 +10,7 @@
 
 - **一个焦点**：角色的脸，加上那道斩线。整张图最亮的只有斩线，七成画面是暗部。
 - **红青对撞**：朱砂和青锋接近互补色，缩成小图也一眼分得开。
-- **低机位、强透视、对角线构图**，靠这些出动势。
+- **对角线构图加强透视**出动势。透视感放在剑和手臂上；机位放在角色正前方、胸口高度，不要从裙下往上拍。
 - **角色要大**：信息流里封面很小，看得清脸才会有人点。
 - **脸放在画面中间那块正方形里**：平台会在不同位置裁成方形或竖版，脸放中间才不会被切掉。
 - **标题放右下角**：那里是修好的平静区域，画面压暗、少放细节。
@@ -20,7 +20,7 @@
 `3840×2160` · `quality: high` · 参考图：① 三视图 + ② 剑
 
 ```text
-Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit and colors. Do not mirror the character.
+Use the character from the first reference image and the sword from the second reference image exactly: same face, hair, cinnabar-red ribbon bow, glowing cyan hair tips, < > hair clips, LEFT-eye monocle with headset mic, pearl-white cybernetic RIGHT arm, outfit (white fitted shorts under the skirt) and colors. Do not mirror the character.
 
 Epic music video key visual. One razor-thin, blinding cyan (#19F0C8) cut line runs diagonally across the entire image from the upper right corner to the lower left corner, splitting the world in two:
 - upper-left side: a rain-soaked cyber-wuxia city drowned in cinnabar-red (#E8381F) glitch blocks, corrupted data and red warning light;
@@ -29,7 +29,7 @@ Along the cut, the two halves are slightly offset as if the world itself was sli
 
 The character floats right on the cut line in the center, at the instant the slash finishes: cybernetic right arm fully extended toward the lower left, the oversized glass sword trailing the cut, hair and the long red ribbon whipping in an arc. Head turned back toward the viewer with a confident smirk; the monocle glints. Strong cyan rim light from the cut on her silhouette.
 
-Composition: low angle, dramatic foreshortening, the character large in frame with her head and face inside the central square of the image; the lower-right area calmer and darker, reserved for the title. About 70% of the image is dark; the cut line is the brightest element. Rain droplets frozen in mid-air.
+Composition: camera in front of her at chest height, three-quarter front view, dramatic foreshortening on the sword arm and sword; modest framing, the camera never looks up the skirt. The character is large in frame with her head and face inside the central square of the image; the lower-right area calmer and darker, reserved for the title. About 70% of the image is dark; the cut line is the brightest element. Rain droplets frozen in mid-air.
 
 Style: bright clean anime idol character with crisp cel shading, against Chinese ink-wash cyber-wuxia environments; strict palette ink black #0B0B10, rice-paper white #EDE4D3, cinnabar red #E8381F, sword cyan #19F0C8. No text, no letters, no logos, no watermark.
 ```
@@ -59,7 +59,7 @@ Edit the reference image. Keep exactly the same city, composition and camera ang
 `2160×3840` · `quality: high` · 透明底 · 参考图：① 三视图 + ② 剑。用 [character.md](character.md) 的姿势模板，`{FRAMING}` 填 `full body`，`{POSE}` 填：
 
 ```text
-Floating mid-air at the instant a huge diagonal slash finishes: cybernetic right arm fully extended toward the lower left, the oversized glass sword trailing behind the swing, body twisted, hair and the long red ribbon whipping in an arc; head turned back toward the viewer with a confident smirk, the monocle glinting. Strong cyan rim lighting on her silhouette from the lower left (lighting on the character only, no glow around her). Low angle, dramatic foreshortening.
+Floating mid-air at the instant a huge diagonal slash finishes: cybernetic right arm fully extended toward the lower left, the oversized glass sword trailing behind the swing, body twisted, hair and the long red ribbon whipping in an arc; head turned back toward the viewer with a confident smirk, the monocle glinting. Strong cyan rim lighting on her silhouette from the lower left (lighting on the character only, no glow around her). Camera in front of her at chest height, dramatic foreshortening on the sword arm and sword.
 ```
 
 ### B4 Remotion 合成
@@ -80,10 +80,14 @@ Floating mid-air at the instant a huge diagonal slash finishes: cybernetic right
 
 ## 标题和文字（在 Remotion 里加）
 
-- 主标题「千行剑」：书法体竖排，白字带青色辉光，旁边盖朱砂印章
-- 钩子句：「一剑劈开数据界」
-- 程序员彩蛋（等宽小字）：`ERROR ×999+ → 0` 或 `All tests passed ✓`
-- 最多就这三样，字一多，缩略图里就看不清了
+字跟着"一剑劈开"走：水墨那半边用书法题字，红色那半边用等宽代码字。字体分工见 [STYLE_BIBLE.md](../STYLE_BIBLE.md) 第 7 节。
+
+- **主标题「千行剑」**：马善政楷书，竖排，放在右下角的水墨区，三个字约占画面高度的四成。用墨黑色，外面加一圈淡淡的宣纸色外发光，像国画上的题字。
+- **印章**：朱砂红方块里放反白的「赛博江湖」（白文印），按右列"赛博"、左列"江湖"排，边缘做破损，盖在标题下方。不用另找篆书字体，马善政反白就行。
+- **钩子句「一剑劈开数据界」**：霞鹜文楷，竖排小字，贴在标题左边。
+- **彩蛋 `ERROR ×999+ → 0`**：JetBrains Mono，朱砂红，放在左上红色区靠近斩线的位置，加一点 RGB 错位。
+- 除了标题和印章，最多再加这两行小字；字一多，缩略图里就看不清了。
+- **进阶**：把「剑」字最后那一笔（立刀旁的竖钩）拉长成一把剑，带青光。在 Figma 或 Illustrator 里把字转成轮廓，换掉那一笔，导出 SVG 给 Remotion 用。
 
 ## 发布前检查
 
