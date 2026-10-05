@@ -76,7 +76,16 @@ into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session 
 
 ## Phase 4 — Storyboard
 
-- [ ] `STORYBOARD.md`, one row per lyric line; STYLE_BIBLE §6 is the per-section draft
+- [x] `song/frames.md`: the 30 fps frame grid (every bar, beat, hit and sung character). `notes/fight-design.md` and
+      `notes/acting-design.md`: the fight grammar and moves, the dragon, and the chibi's acting line by line
+- [x] Owner (2026-10-05): 「不如来算帧数 我们把分镜做的详细点 … 不如现在把分镜写满（越详细越好） 因为这个音乐节奏卡点很强
+      基本上出图要十分的多 我不介意这个部分」 → `STORYBOARD.md` (contract, world, rules, lyric layer, drawing registry,
+      hand-offs, integration rulings G1–G7, known issues) and `storyboard/01-…12-*.md`: 261 shots tiling f0–f6328, each
+      with its music, every lyric character on its frame, layers, an action frame list, camera, red level, exit and art
+      ids. Written by twelve parallel agents, reconciled by one set of rulings and a fix pass; a script checks tiling,
+      lyric frames and flash density on every part
+- [ ] Owner review of the storyboard (draft 1)
+- [ ] Art list compiled from the storyboard (merge near-duplicate drawings, group into sheets, prompts)
 
 ## Phase 5 — Art (cover first)
 
@@ -118,6 +127,8 @@ into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session 
       `out/thumb-check.png`
 - [ ] Owner review of the cover, then export `deliver/cover/` (2560×1440, 1920×1080 and 1080×1440, PNG and JPG)
 - [ ] Poses 1–11 and backgrounds, after the storyboard
+- [x] `prompts/chibi.md`: message 0 (the bible) and the chibi reference sheet, for the owner to generate by hand now
+- [ ] `images/00_chibi_sheet.png` generated, pushed and checked
 
 ## Phase 6 — Compose
 

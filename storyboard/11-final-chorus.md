@@ -1,0 +1,467 @@
+## Part 11 · Final Chorus · f5171–f5548
+
+The peak of the station journey, in 11 shots. 3,000 of her swords (千), the stitches Chorus 2 left in the city, each trailing a line of real code, carry her through four stations: the red wall, the gate plaza, the central tower (BG-tower), and the tower's tip.
+The city decodes from red to cyan once per sung line: R 0.30 → 0.22 on 劫 → 0.14 on 解 → 0.08 on 灭 → 0 on 赛. There is no key change, so the lift comes from the picture: the grade brightens line by line and the formation grows (3,000 swords → 27,000 snowflakes → a line of code → a 300 m giant blade of 10,000 swords, when every sword planted on the city's ridges rises and joins). The final chorus tops both earlier ones on every count: swords 1,000 → 3,000 → 10,000, snow 3,000 → 9,000 → 27,000, giant sword about 40 → 120 → 300 m.
+Line 4 is one continuous 100-frame git diff. The expected line 「一剑劈开数据界」 hangs as a red `-` row. 此 and 去 are typed into the `+` row and the caret stops on her raised blade. On 赛 the giant sword falls along the caret, cleaves `-` between 劈|开 and carves 赛 (the 6.465 title carve again), and two impact frames flip cinnabar → cyan. The swords burst out over the city as the cyan wave, ending on B9, the brightest frame of the film.
+Large flashes: f5189, f5234, f5470 (bloom swell), f5516–f5517 (impact frames), at least 45 f apart. Hit-stops: f5189 (3), f5200 (3), f5234 (5), f5378 (4), f5516 (5).
+
+#### S11-01 · f5171–f5188 · 18 f · 172.37–172.93 s · bar 114.6–115.0
+- **Music:** the pickup 千行剑 over the second half of the lead-in bar 114. Sung 千 f5171. The pickup hit is 172.40 (f5172: sub, mid and hats, the loudest onset of the pickup), then a snare at 172.59 (f5178) and hats at 172.78 (f5183). The shot ends one frame before the Final Chorus bar-1 downbeat (172.93–172.97, f5188/f5189).
+- **Lyric:** 「千行剑」 千f5171 行f5177 剑f5184 is phrase 1a. Chorus grammar, defined here and used for the whole part: 志莽行书, paper #EDE4D3, each phrase on its own wet ink stroke (#0B0B10 at 80 %) that paints in from the left over 4 f. Each character slams on its frame at 140 % → 112 % → 100 % (f, f+1, f+2, a 2 f overshoot) and throws 3–5 ink flecks on f+1. The glow is cyan and pulses on every beat (12 → 36 → 12 px over 6 f). Each line also carries a JetBrains Mono line number in a left gutter (`1`, `2`, `3`; line 4 gets the diff gutter): 40 px, paper at 45 %, right-aligned at x 262, fading in over 4 f with the line's first character. Choruses 1 and 2 already carried a dim gutter `1`–`4` beside their lines (28 px, paper at 35 %); here it is a step larger and brighter, and line 4 pays it off. 1a: 180 px, x 300–840, y 80–260. Its plate starts on the cut at f5171, not 2 f early, because f5169–f5170 belong to part 10. Gutter `1` at y 170.
+- **Picture:** the WebGL journey world, defined here for the whole part. Units are metres. Her standing body is 1.0 m and SW is 1.0 m. Street level is y 0. The route runs down the city's main canyon toward −z. FOV 45° unless stated, so she is about 1304/d px tall at distance d.
+  - Back to front: BG11-sky on a cylinder at r 3 km, graded cinnabar at R 0.30. BG11-skyline on a cylinder at r 2 km. City-kit cards PR11-block-a…f line both sides of the canyon (x ±12…40, z +20…−700, 15–60 m tall). Code fills their measured signboards with sparse red error text (density ∝ R) and the rest with cyan text, as part 10 left the city (about 3 boards in 10 red at R 0.30).
+  - Planted swords, two kinds. **Chorus 2's stitches:** its 劈 scar runs down this canyon, and the 3,000 swords it planted there (part 07) still stand point-down along the ridges of both rims, a dotted cyan line with their code tails furled; they become the formation. **The city's own swords:** smaller cyan uprights stand point-down on ridges all over the city, left on the rooftops since Drop 2 (part 10's S10-11 shows them); there are 7,000 of them, and they rise in line 4.
+  - Ahead, at z −40, station 1, **the red wall**, hangs between PR11-block-c (left) and PR11-block-d (right): an 18 × 10 m curtain (x −9…9, y 16…26) of 22 rows of cinnabar JetBrains Mono, glyphs 0.45 m. The rows include `Uncaught TypeError: Cannot read properties of undefined`, `Segmentation fault (core dumped)`, `panic: runtime error: index out of range`, `RangeError: Maximum call stack size exceeded`, `GET /admin HTTP/1.1` and `at recurse (jianghu.js:42:7)`. The rows scroll sideways at alternating speeds.
+  - Near: BG-ridge as a card under her (the ridge at (0, 20, 0) where she stood in B6 at the end of part 10).
+  - Her: B7, mid-hop above the ridge. Feet (0, 20.35, −0.3) project to screen feet (669, 715) and head (669, 336), 379 px.
+  - The formation, defined here: 3,000 instanced SW sprites, Chorus 2's stitches. Each quad is oriented along its flight and turned about its long axis toward the camera, so it is never edge-on. Glass blades are cyan-emissive, with a ±0.1 m bob with hashed phase and +30 % emissive on every beat (4 f decay).
+    - Each sword drags a line of real code behind it, Chorus 2's code tails (part 07) scaled to the 1.0 m sword: JetBrains Mono, 0.10 m glyphs, 24–48 glyphs over 2.5–5 m, cyan #19F0C8 at 70 % fading to 0, lines picked by hash from part 07's pool of 64, over a faint 6-frame cyan ribbon. Beyond 120 m a tail collapses to one tapered streak.
+    - Counts through the part: 3,000 in the formation; forked ×9 into 27,000 snowflakes in line 2 and joined back; 3,000 in the crown and the line of code; 10,000 in the giant blade when the city's 7,000 ridge swords join in line 4.
+    - Budget: at most 27,000 sword instances (the snow, whose tails shrink to a few glyphs) and at most about 400,000 glyph quads (10,000 tails of up to 48 glyphs at the giant blade; tails beyond 120 m collapse to streaks, so far fewer in practice).
+  - Rain: grey log-line rain (`tail -f`), with 30 % of the drops carrying red error words.
+- **Action:**
+  - f5171 (千): cut in mid-hop, B7 0.35 m above the ridge and rising. Code draws a 2-frame cyan arc (f5171–f5172) of the sword flipping from upright, as it was in her hand in B6, to flat under her boots. The B7 drawing carries the sword.
+  - f5172 (pickup hit): ink dust puffs off the ridge tiles where she pushed off.
+  - f5173: apex, +0.55 m.
+  - f5175: she settles onto the flying sword with a 10 % squash. A cyan wake ignites under the crossguard: code jet lines, 0.8 m long, flickering on the 16ths.
+  - f5177 (行): launch. She shoots along the canyon toward the upper right of the frame. Rank 1 (1,500 swords, the nearer half of the stitches) pulls out of the ridges on both sides of the canyon as a spray of cyan points, unrolls its code tails over 6 f and swings in behind her.
+  - f5178 (snare): brush speed lines enter from the frame edges.
+  - f5180–f5186: the arrowhead (锋矢阵) assembles behind her: two wings at ±32°, 25 rows deep, 1.2 m between rows, 0.6 m lateral spacing, 30 m across at the back, stacked in three layers 1 m apart (1,000 swords a layer). The code tails stream back from it like lines of text.
+  - f5184 (剑): rank 2 (the other 1,500, from farther down the canyon) rises, unrolls its tails and fills the wings.
+  - f5186: the V locks with an emissive pulse.
+  - f5186–f5187: the red wall ahead flares (its rows stop scrolling and brighten 20 %), sensing her.
+  - f5188: smear frame. She vanishes into a straight streak toward the wall (white core 4 px, cyan body 18 px, glow 60 px, 16 parallel brush lines). The sword goes with her and is in her hand from the next frame.
+- **Camera:** a chase rig at her chest height, behind her and to her right, so her cybernetic arm is the near arm.
+  - f5171: (1.25, 20.80, 3.0) looking at (−0.9, 20.85, −12).
+  - f5174: (1.25, 20.95, 2.6), rising with her.
+  - From f5177 the rig accelerates with her but lags. At f5188 it is at (1.4, 21.45, −23.4) looking at (−0.6, 21.5, −40). She shrinks from 379 px to 194 px, with feet at (843, 631) and head at (844, 437). The wall centre sits at (1007, 579), about 1,400 px wide.
+  - Punch S at f5172. Micro-shake (4 px) f5177–f5181.
+- **Grade / R:** R 0.30. Sky and rain carry a 30 % cinnabar tint. Lift level L1: exposure 1.00, bloom 0.8, saturation 1.00. Rim lights: cinnabar from the wall (screen-right), cyan from the sword and formation (below and left).
+- **Out:** hard cut at f5189 on the downbeat and 破.
+- **Art:** B7; SW (formation instances); BG-ridge; PR06-moon (shared, part 06: the film's one moon, a card on the sky cylinder, large and pale, low in the panorama's right third). New, defined here:
+  - **BG11-sky:** a Chinese ink-wash night sky panorama with no buildings and no moon (PR06-moon is laid over it by code). Layered clouds in dry brush, a soft moonlit thinning of the clouds low in the right third, mist bands along the bottom edge, rice-paper grain; ink black to grey, no neon, no text. 3840×1280 (3:1), mapped on a cylinder at r 3 km; the left and right edges must tile (fix the seam with a masked edit). Code grades it cinnabar ∝ R and adds the cyan underglow in line 4.
+  - **BG11-skyline:** the far skyline all round the horizon as one continuous band: pagoda-towers, archway gates, layered eaves fused with megastructures and pylons, thousands of tiny windows, many blank glowing signboards, the line of the city wall in one stretch. Painted at eye level, the bottom edge at the horizon, neutral neon (no red), blank boards, no text. The sky is flat magenta for keying. 3840×1280 (3:1), seamless left to right, mapped on a cylinder at r 2 km. It comes with a measured board map so code can fill the boards.
+  - **PR11-block-a…f:** the city kit. Each is one tall building face-on at eye level, full height, on flat magenta, 1152×2048, blank glowing boards, no text:
+    - a: a seven-storey pagoda-tower with upturned eaves and holographic lantern strings;
+    - b: a concrete-and-glass megastructure wearing tiled eaves every third floor, with a column of blank vertical boards;
+    - c: an archway gate tower with an empty hanging board frame between its piers;
+    - d: a slender data pylon dressed as a bell tower, with cable bundles;
+    - e: a stacked residential block with balconies, laundry poles and lanterns;
+    - f: a temple hall with a sweeping roof and a large blank horizontal board over its door.
+
+    They are instanced as facade cards along the route at 15–60 m (scale and order varied), and each has a measured board map.
+
+#### S11-02 · f5189–f5217 · 29 f · 172.97–173.90 s · bar 115.0–115.6
+- **Music:** the Final Chorus bar 1 downbeat (f5189: kick, snare and mid) carries 破. A mid hit lands at 173.34 (f5200, beat 2) and a kick at 173.72 (f5212, beat 3). 长 f5204 and 夜 f5209 fall between them.
+- **Lyric:** 「破长夜」 破f5189 长f5204 夜f5209 is phrase 1b, 180 px, x 920–1460, y 80–260, beside 1a. The top-right corner is clear (x ≤ 1460).
+- **Picture:** station 1, face-on. Back to front:
+  - the red wall filling the frame (camera 7 m from it, 186 px/m; glyphs 84 px tall);
+  - from f5204, through the hole, the canyon beyond: PR11-block cards, a red corridor of hanging boards far ahead (S11-04), and rain;
+  - her F-issen ×3 at about 150 px tall (lunge drawing about 150 × 315 px);
+  - the formation, which waits during the triple issen in a half-dome just behind the camera plane. Only its tips and glows poke in at the frame edges, as out-of-focus cyan streaks quivering on the 16ths.
+  - FX: three issen streaks, cut lines, sparks, wall fragments, ink.
+- **Action:**
+  - f5189 (破), issen #1: streak #1 is already drawn, lower-left (380, 900) to upper-right (1400, 470). F-issen #1 appears at its far end, chest at (1330, 470). Large flash 1: paper white at 60 %, f5189–f5190. Hit-stop 3 (f5189–f5191): rain hangs, and sparks crawl along cut #1 (6–12 streaks, cyan to white).
+  - f5192: #1 drifts 14 px along the strike (ease-out).
+  - f5194: smear for issen #2. She vanishes and #1 stays as a cyan afterimage at 45 %, fading out by f5200.
+  - f5195, issen #2: streak from upper-left (380, 420) to lower-right (1400, 880), with F-issen #2 at (1330, 860). Punch S. No hit-stop (8th-note hit).
+  - f5199: smear for #3. The #2 afterimage fades by f5205.
+  - f5200 (mid hit, beat 2), issen #3: a horizontal streak (300, 668) → (1520, 668), with F-issen #3 at (1450, 650). The three streaks cross at (930, 668) in a 米-shaped star. Hit-stop 3 (f5200–f5202). All three cut lines burn white with a 2 px core, and every glyph they cross shows a white hairline.
+  - f5203: the wall's text bulges 30 px toward the camera around the crossing point, and its rows stop scrolling.
+  - f5204 (长): the wall bursts. Six wedge-shaped pieces split along the three cuts and blow away from the camera into depth, rotating 8–20° and shrinking. Every glyph turns to ink on the way: halves slide, a 1 f white glyph flash, then black. Each glyph throws 3–8 blots that fall to the street 20 m below. Out-of-focus ink blots fly across the lens. The camera starts to rush through the hole (see Camera).
+  - f5205–f5208: the formation pours through the hole with the camera, sword streaks passing the lens on both sides, their code tails smeared into lines.
+  - f5208: smear. She streaks from #3's position to the centre ahead, and the sword flips from her hand to under her boots.
+  - f5209 (夜): B7 at world (0.5, 21.2, −47.0), screen (932, 529) centre, 296 px. She heads to the upper right as the formation re-forms the V behind her.
+  - f5212 (kick): the V pulses, emissive +30 %.
+  - f5209–f5217: she rides at 90 m/s and drifts to (857, 528), 314 px. The canyon's red signboards stream past on both sides.
+- **Camera:**
+  - f5189–f5203: static and face-on at (−0.16, 21.9, −33.0) looking at (−0.16, 21.9, −40), with the 1.5 %/s push. Punch S on f5189, f5195 and f5200, eased back over 6 f.
+  - f5204–f5209: the rush, ease-in. Through the hole's centre (−0.16, 21.21, −40), passing the wall plane at f5207, to (0.4, 21.75, −43.5). FOV widens 45 → 52 and is back to 45 by f5212.
+  - f5209–f5217: the chase rig again, behind her right shoulder at her chest height: (0.9, 21.65, −42.6) looking at (−0.3, 21.7, −60), then (1.2, 21.9, −67.4) looking at (−0.4, 21.95, −85).
+  - Shake L on f5204 (16 px, 1.5° roll, decays over 14 f).
+  - She is at or below the camera height on all three issens (camera level with her chest on #1, which is the highest).
+- **Grade / R:** R 0.30. The flash at f5189. In the burst, the fragments turning to ink take the grade's red with them, so the frame reads darker for 4 f (f5204–f5207).
+- **Out:** hard cut at f5218 on 光.
+- **Art:** F-issen; B7; SW; PR11-block-a…f; BG11-sky; BG11-skyline. New, defined here (first seen in the distance through the hole):
+  - **PR11-banner:** an empty hanging signboard. A tall board frame of dark lacquered wood edged with thin cyan neon tubes hangs by two chains from a small tiled eave; the board face is blank and faintly glowing. Front view at eye level, on flat magenta, 1152×2048, no text. Code fills it with red stack traces and cuts it.
+
+#### S11-03 · f5218–f5233 · 16 f · 173.93–174.43 s · bar 115.6–116.0
+- **Music:** 光速 over the end of bar 115: a snare at 174.09 (f5223, beat 4) and mid at 174.28 (f5228). It runs into the bar 116 downbeat at f5234.
+- **Lyric:** 「光速斩尽红字劫」 starts as phrase 1c, bottom row, 170 px, x 365–1555, y 840–1010: 光f5218 (x 365–535), 速f5224 (535–705). Gutter `1` is not repeated, because the line already has one. The rest of 1c lands in S11-04.
+- **Picture:** head-on light speed, the image of the chorus. Back to front:
+  - BG11-sky;
+  - BG11-skyline far behind her;
+  - the canyon's PR11-block cards rushing toward the camera on both sides, their red boards smearing into lines;
+  - the full V of 3,000 swords spreading behind her into depth (the nearest 3 m behind her, the farthest 40 m), their code tails streaming toward the lens;
+  - her: **N11-ride_front** (new), centred at (960, 504), 398 px (feet 703, head 305), the sword pointing at the lens.
+  - FX: radial brush speed lines, and rain turned to near-horizontal streaks.
+- **Action:**
+  - f5218 (光): cut in. A 4-point glint flashes on her monocle (code, 3 f), and the formation's emissive rises +40 % over 4 f.
+  - f5220: her ribbon tails and the tassel whip (the drawing bobs 8 px on the 8ths).
+  - f5223 (snare): punch S.
+  - f5224 (速): the warp, a dolly zoom over f5224–f5227. FOV goes 45 → 62 while the camera closes from 3.6 m to 2.6 m, so she holds about 385 px while everything behind her stretches away. The code tails lengthen ×4 (their glyphs stretch into lines), the city's lights become long lines, and the rain becomes streaks.
+  - f5228–f5229: hold at the warp. The formation's emissive peaks and a ring of speed lines pulses on f5228.
+  - f5230–f5233: whip pan to the right with a directional brush blur (4 f), landing on S11-04 at f5234.
+- **Camera:** ahead of her, flying backward at her speed and looking back at her (+z), at her chest height.
+  - f5218: (0, 21.9, −75.6) looking at (0, 21.9, −72), with her feet at (0, 21.45, −72.0).
+  - She accelerates from 90 to 150 m/s and reaches z −146 by f5233.
+  - Dolly zoom f5224–f5227 as above. Push 1.5 %/s otherwise.
+  - Whip f5230–f5233. She never grows past 400 px, so her head stays below the top lyric row (y ≥ 300).
+- **Grade / R:** R 0.30. During the warp the highlights stretch and the grade cools 5 % (more cyan in the mids).
+- **Out:** whip pan landing on f5234.
+- **Art:** SW; PR11-block-a…f; BG11-sky; BG11-skyline. New, defined here:
+  - **N11-ride_front:** a chibi sticker, full body, front view at her chest height. She rides her flying sword straight at the viewer like a surfer charging the camera.
+    - Sword: level under her boots, pointing straight at the viewer and strongly foreshortened. The glass blade and point are nearest and largest at the bottom centre, the ⏎-shaped crossguard is just behind her heels, and the red tassel streams back.
+    - Pose: feet apart on the flat of the blade, her left foot (screen-right) slightly forward, knees bent, leaning forward into the wind. Both arms are swept back and down behind her for balance, the pearl-white cybernetic right arm on screen-left and the wide left sleeve on screen-right streaming back.
+    - Face and hair: a fierce, delighted grin, cyan eyes on the viewer, the monocle on the eye on screen-right. Bangs, ponytail, both ribbon tails and the tassel stream straight back behind her.
+    - No sword in her hands.
+    - Sheet text: flat magenta #FF00FF, white die-cut border, no text, no effects, the asymmetry card checked.
+    - One portrait cell (it can share a sheet with other parts' N drawings); shown up to 400 px tall, so upscale ×4. It can also serve 光速 in parts 03 and 07.
+
+#### S11-04 · f5234–f5262 · 29 f · 174.47–175.40 s · bar 116.0–116.6
+- **Music:** the bar 116 downbeat 174.47 (f5234: kick, mid and hats) carries 斩. A snare at 174.84 (f5245) carries 红, hats at 175.03 (f5251) carry 字, and 劫 falls on f5254. The syncopated kick and snare at 175.31 (f5259) starts the whip.
+- **Lyric:**
+  - 1c continues: 斩f5234 (x 705–875, cyan fill and cyan glow), 尽f5240 (875–1045). Then 红f5245 (1045–1215), 字f5251 (1215–1385) and 劫f5254 (1385–1555), all in cinnabar fill with a cinnabar glow pulsing on the beats.
+  - 1a and 1b bleed out (ink-bleed dissolve) over f5258–f5262 to free the top row for line 2.
+  - 1c stays until f5278 (0.8 s after 劫).
+- **Picture:** a 3/4 rear-right view, with the corridor receding to the right. Back to front:
+  - BG11-sky; BG11-skyline;
+  - the street's PR11-block facades, whose boards will decode;
+  - **the banner corridor**: nine PR11-banner boards hanging across the street at z −172, −182 … −252, staggered x ±4, faces y 18.5–25.5. Code fills each with red stack traces: `Traceback (most recent call last):`, `  File "jianghu.py", line 4, in <module>`, `RecursionError: maximum recursion depth exceeded`, `java.lang.NullPointerException`, `    at Jianghu.main(Jianghu.java:1)`. They recede toward the vanishing point (1467, 546); the nearest is about 240 × 420 px at (1300, 545) and the farthest about 55 × 95 px;
+  - the formation;
+  - her: **B8** standing on the SW sprite (horizontal, point to screen-right), feet (443, 711), head (443, 344), 367 px. The cybernetic arm is thrust toward the right edge in the sword-finger sign.
+- **Action:**
+  - f5234 (斩): B8, and the 3,000 swords lance forward from behind and around her toward the vanishing point in 2 f as straight streaks. Each banner takes about 330 swords, leaving about 30 white hairline cuts per banner (several blades share each cut). Large flash 2: paper white at 70 %, f5234–f5235. Hit-stop 5 (f5234–f5238): the swords hang mid-pass, half through the boards, their code tails threaded back through the cuts; rain hangs; sparks sit where blades meet boards.
+  - f5239: release. The swords carry on through and beyond the last banner, curve back high, and return over her by f5255.
+  - f5240 (尽): the cut pieces of all nine boards slide 30–60 px apart along their cuts (4 f). She drifts 18 px right (follow-through, ease-out) and breathes ±1.2 %.
+  - f5244: a 1 f local white flash on the pieces of banners 1–3.
+  - f5245 (红): banners 1–3 (nearest) burst into ink, 3–8 blots per glyph, falling to the street and staining it.
+  - f5250: a local white flash on banners 4–6.
+  - f5251 (字): banners 4–6 burst.
+  - f5253: a local white flash on banners 7–9.
+  - f5254 (劫): banners 7–9 burst. **First decode**, defined here. Along the corridor, near to far over f5254–f5262, every signboard re-types glyph by glyph from red to cyan text: `200 OK`, `PASS`, `fixed`, `exit 0`, `0 errors`, `return 0;`. That is one glyph per frame per board, the reboot's decode reused. Windows turn from cinnabar to cyan-white, and the corridor's sky tint lifts.
+  - f5255–f5258: the formation streams back past her into the V. Ink drips from the empty chains.
+  - f5259 (kick and snare): the whip begins.
+- **Camera:** at her chest height, 3/4 behind her and to her right: (2.6, 21.95, −149.2) looking at (−1.6, 22.0, −160).
+  - Push 1.5 %/s with a 0.3 m drift along −z, following the strike.
+  - Punch L on f5234 (+8 % over 2 f, held through the hit-stop, eased back over 10 f from f5239).
+  - Shake S on f5245, f5251 and f5254.
+  - Whip pan right f5259–f5262 (directional brush blur), landing on f5263.
+- **Grade / R:** R 0.30 → 0.28 (红) → 0.25 (字) → 0.22 (劫), each step eased over 4 f. The red recedes from the corridor first; the rest of the city follows the global R.
+- **Out:** whip pan landing on f5263.
+- **Art:** B8; SW; PR11-banner; PR11-block-a…f; BG11-sky; BG11-skyline.
+
+#### S11-05 · f5263–f5305 · 43 f · 175.43–176.83 s · bar 116.6–117.6
+- **Music:** line 2's pickup 千 f5263 sits between the syncopated hits 175.31 (f5259) and 175.59 (f5268, kick, snare and mid). Bar 117 has mid hits at 175.97 (f5279) and 176.34 (f5290). Sung: 行 f5269, 剑 f5276, 落 f5281, 如 f5294, 雪 f5299.
+- **Lyric:**
+  - 「千行剑」 千f5263 行f5269 剑f5276 is phrase 2a: 180 px, x 300–840, y 80–260, gutter `2`.
+  - 「落如雪」 落f5281 如f5294 雪f5299 is phrase 2b: 180 px, x 920–1460, y 80–260. 雪 slams with a puff of tiny white sword-shaped flakes (code, 8 f).
+  - 1c leaves f5279–f5284: 光速斩尽 bleeds out while 红字劫 shatters into ink droplets that fall out of the frame.
+- **Picture:** station 2, **the gate plaza**, defined here.
+  - The city's great square: PR11-plaza paving at y 0, z −305…−425, x −90…90. The joints are cyan code-lines. **48 red bug holes** (code decals) are jagged cracks 0.6–2 m across with red light, each with a short red error line crawling out of it as a 虫 Bug (`NullPointerException`, `undefined is not a function`, `ECONNREFUSED`, `502 Bad Gateway`, `Segmentation fault`). They lie in three depth bands: near z −312…−345 (holes 1–16), mid −345…−380 (17–32), far −380…−420 (33–48).
+  - In the middle stands a 12 m carved column, PR11-huabiao, at (0, 0…12, −300), with a flat round platform on top.
+  - Behind the square is the firewall seen from inside, BG02-wallinside `-elevation` (part 02's wide layer), as a card at z −430 (gate-tower ridge at 34 m). It is the gate she sealed in Drop 1, still glowing faintly red.
+  - The central tower, BG-tower, is far off to the upper right, its tip near (1264, 98) once the camera has pulled back.
+  - Back to front: BG11-sky, BG11-skyline, BG02-wallinside `-elevation`, PR11-block cards around the square, the plaza with its holes, PR11-huabiao, her, the formation rings, snow, rain (50 %; 15 % of the drops carry red words).
+  - Her: F-sword_finger at about (736, 522) centre, 371 px (feet 707, head 336), on the platform at (0, 12, −300).
+- **Action:**
+  - f5263 (千): she lands on the platform in F-sword_finger: squash 12 %, then an ink ring spreads across the platform and a dust puff rises. The sword is in her right hand, point-down, and the left hand is raised in the sword-finger sign. The formation arrives behind her as streams curving down from the right.
+  - f5268 (hit): punch S. The ink ring reaches the platform's edge and drips.
+  - f5269 (行): ring 1 (1,500 swords, three tiers of 500) rises around the column top, radius 6 m at her height ±1 m, tips up, turning clockwise at 20°/s, its code tails trailing round it as bands of text. With the camera 3.5 m away, the ring's near arc lies behind the camera, so nothing crosses her face.
+  - f5276 (剑): ring 2 (the other 1,500, three tiers of 500) at radius 10 m, 1 m higher, counter-rotating.
+  - f5279 (mid hit): both rings tighten 0.5 m, the anticipation.
+  - f5281 (落): swap to **C7** with a hop of 16 px (arms up, face up, open-mouthed joy). SW floats upright beside her on screen-right and bobs. Both rings burst straight up (f5281–f5286, 40 m, out of the top of the frame). The camera starts its pull-back.
+  - f5288: off-frame at the apex, each sword splits into 9 mini-swords (0.3 m, their tails shrunk to a few glyphs), and a spray of cyan sparks leaks in at the top edge.
+  - f5290 (mid hit): **27,000 flakes** (3,000 × 9; Chorus 1 snowed 3,000 and Chorus 2 9,000) start to fall like snow, tumbling slowly. They fall at 1.2 m/s and drift ±0.4 m/s. White-cyan and faintly glowing, they fill the sky; nearer flakes are larger, softer bokeh.
+  - f5294 (如): the snowfall reaches her height and passes her. The plaza comes into view below the horizon (y 663–1047 by f5305), its 48 red holes glowing and the bug lines crawling.
+  - f5299 (雪): the first flakes settle on the far paving as glowing specks.
+  - f5300–f5305: the snow thickens. She sways in C7 on the beats (±3°).
+- **Camera:** in front of her at her chest height, 12.45 m.
+  - f5263–f5280: (0.6, 12.45, −296.5) looking at (0.6, 12.45, −312), with a 1.5 %/s push.
+  - f5281–f5305: pull back to (1.4, 12.45, −288.0) looking at (1.1, 12.45, −312), ease-in-out. She shrinks from 325 px to 109 px, centred at (824, 535).
+  - Punch S on f5263 and f5268.
+- **Grade / R:** R 0.22. Lift level L2 from f5263: exposure 1.06, bloom 0.9, saturation 1.04. The snow adds soft highlights. The gate tower keeps a red rim.
+- **Out:** hard cut at f5306 on 万.
+- **Art:** F-sword_finger; C7; SW (floating, and the formation); PR11-block-a…f; BG11-sky; BG11-skyline; BG02-wallinside `-elevation`; BG-tower.
+  - Shared, first used in this part here:
+    - **BG02-wallinside `-elevation`** (shared, part 02: the wide layer of BG02-wallinside, the firewall from inside; it replaces PR11-gate). A 3840×1280 front-on view of the wall from about 140 m inside the city, two-storey gate tower centred with a blank board over its closed gate, lantern poles along the foot, flat magenta sky, no text (prompt in part 02). Here it is a card at z −430 behind the square, the gate-tower ridge at 34 m; the gate tower is the gate she sealed in Drop 1, and code decodes its board on 解 (S11-07).
+    - **BG-tower** (shared, defined in part 08: the central tower, a 13-storey pagoda fused with a megastructure spire, upturned eaves, a ring of blank panels at its waist and a needle antenna on top, as an isolated 1440×2560 cut-out on magenta; it replaces PR11-pagoda and is the tower the dragon coils in Drop 2). Here it is a y-axis billboard (see S11-08). The flat round platform that caps its needle antenna is too small to read at full height; PR11-tip (S11-09) shows it. S11-08 sees tiers 6–13 from about 20 m, so there it is shown large (upscaled about ×3).
+  - New, defined here:
+    - **PR11-plaza:** a seamless top-down texture of a vast stone-paved square. Large grey-white slabs with thin cyan circuit lines in the joints, dry-brush ink weathering, scattered puddles; no cracks (code draws the cracks and holes); no text. 2048×2048, tiling.
+    - **PR11-huabiao:** a tall carved stone column (华表) before the city gate, in cyber-wuxia style. White stone with cyan circuit-line carvings spiralling up it like a coiled dragon, a horizontal cloud-shaped stone plate near the top, crowned by a round flat platform about the size of a small table. Eye-level view of the column's upper third, the platform's top seen as a thin ellipse, on flat magenta, 1152×2048, no text.
+
+#### S11-06 · f5306–f5332 · 27 f · 176.87–177.73 s · bar 117.6–118.2
+- **Music:** 万 f5306. 177.09 (f5313: kick, snare and mid) falls with 般 f5314. Then 漏 f5321, and 洞 f5324 on the bar 118 downbeat (177.47, mid).
+- **Lyric:**
+  - 「万般漏洞皆可解」 is phrase 2c, bottom row, 170 px, x 365–1555, y 840–1010: 万f5306 (365–535), 般f5314 (535–705), 漏f5321 (705–875), 洞f5324 (875–1045).
+  - 漏洞 is cinnabar fill with a cinnabar glow; the rest is paper.
+  - 2a and 2b stay above.
+- **Picture:** a macro track low over the plaza. Back to front:
+  - out-of-focus BG02-wallinside `-elevation` and the base of PR11-huabiao in the far bokeh;
+  - PR11-plaza paving (slabs about 1.2 m, cyan joints, puddles reflecting the falling flakes);
+  - bug holes in the near band, 3–4 in frame at a time, each a crack glowing red with its bug line crawling;
+  - falling flakes at three depths; the nearest pass the lens as soft cyan-white smears.
+  - No character in this shot.
+  - The pins happen inside y 300–800 of the frame, above the lyric row.
+- **Action:** four pin waves, one per syllable. Each wave pins 12 holes across the plaza, and we see 3–4 of them. A pin works like this: 8 flakes dive point-down (streaks of 3 f, starting 3 f before the syllable) and strike on the syllable frame. A 4-point spark star shows at each blade tip. The flakes stick, quivering for 3 f. The crack's red turns ink-black (patched) with a small ink splash, and the crawling bug line splits at the pin and dies to ink (halves slide, a 1 f white flash, black).
+  - f5303–f5305 (end of S11-05, off-frame): wave 1 dives begin.
+  - f5306 (万): wave 1, three holes in frame at about (520, 620), (900, 700) and (1300, 560).
+  - f5313 (hit): shake S.
+  - f5314 (般): wave 2, three holes further right (the camera has tracked).
+  - f5321 (漏): wave 3.
+  - f5324 (洞): wave 4, three frames later, a fast double strike, with two clusters of 3 (left and right of frame).
+  - f5325–f5332: pinned holes smoke thin ink vapour. Quivering swords settle. Snow keeps falling.
+- **Camera:** 1.6 m above the paving (she is not in the shot), pitched down 10°, looking north-east across the slabs.
+  - Dolly right (+x) from (−20, 1.6, −318) to (−8, 1.6, −318) over 27 f.
+  - The focus racks to each wave's pinned holes on its syllable, settling over 3 f.
+  - Shake S at f5313.
+- **Grade / R:** R 0.22. Locally, each pinned hole's red drops to ink black. Shallow depth of field; flakes bloom.
+- **Out:** hard cut at f5333 on 皆.
+- **Art:** SW (flakes at 0.3 scale); PR11-plaza; PR11-huabiao; BG02-wallinside `-elevation`.
+
+#### S11-07 · f5333–f5357 · 25 f · 177.77–178.57 s · bar 118.2–118.8
+- **Music:** a snare at 177.84 (f5335) beside 皆 f5333. 可 f5341, then 解 f5346. 178.31 (f5349, snare and mid). The drum fill begins at 178.59, the first frame of the next shot.
+- **Lyric:**
+  - 2c continues: 皆f5333 (1045–1215), 可f5341 (1215–1385), 解f5346 (1385–1555, cyan fill and cyan glow).
+  - On 解 f5346, 漏洞 flips from cinnabar to paper with a cyan glow (2 f), mirroring the patches.
+  - 2a and 2b bleed out f5353–f5357.
+  - 2c stays until f5370.
+- **Picture:** the square from the front, wide. Back to front:
+  - BG11-sky;
+  - BG11-skyline; the central tower BG-tower far off upper right (its tip beyond the top edge);
+  - BG02-wallinside `-elevation` at the top centre (ridge at (963, 199));
+  - the plaza from y 525 (far band) to 941 (near band), with 48 patched holes as ink-black dots and settled flakes glowing;
+  - the column and her: **C7** at (842, 394) centre, 131 px (feet 459, head 328), SW floating beside her;
+  - snow still falling, thinner.
+  - The camera stays at her chest height and a lens shift puts the horizon at y 400, so the square fills the lower 60 %.
+- **Action:**
+  - f5333 (皆): the near band's 16 patches light cyan in a ripple from left to right, two per frame (f5333–f5340). Each glows as a cyan ring and puts out a tiny `PASS` in JetBrains Mono that floats up and fades.
+  - f5335 (snare): punch S.
+  - f5341 (可): the mid band's 16 light (f5341–f5345).
+  - f5346 (解):
+    - The far band's 16 light at once. Every crack between the holes seals with a cyan seam, and the seams join into one connected circuit across the whole square (f5346–f5350), like a PCB.
+    - The firewall gate tower re-lights cyan: its boards decode, its red rim dies, and the gate glows.
+    - She swaps C7 → **B7** with a hop of 30 px. SW slides under her boots in a 2-frame streak (f5345–f5346, a smear frame). She launches toward the upper right, toward the tower.
+  - f5347–f5353: she climbs to the upper right, shrinking to about 60 px, and leaves the frame at (1560, 300) on f5353. The settled flakes not used in pins melt into light and rise. They join back in nines into 3,000 swords, their code tails growing back, and stream after her as a ribbon (27,000 → 3,000).
+  - f5349 (hit): the circuit pulses once, outward from the column.
+  - f5354–f5357: whip pan to the upper right with a brush blur, landing on S11-08 at f5358.
+- **Camera:** at her chest height (12.45 m), 10 m in front, lens-shifted.
+  - From (1.0, 12.45, −290.0) looking at (0.8, 12.45, −312), push to (1.0, 12.45, −290.4) by f5353.
+  - Punch S at f5335.
+  - Whip f5354–f5357.
+- **Grade / R:** R 0.22 → 0.20 (皆) → 0.17 (可) → 0.14 (解), each step over 4 f. The square's district loses its red tint first.
+- **Out:** whip pan landing on f5358.
+- **Art:** C7; B7; SW; PR11-plaza; PR11-huabiao; BG02-wallinside `-elevation`; BG-tower; BG11-sky; BG11-skyline.
+
+#### S11-08 · f5358–f5377 · 20 f · 178.60–179.23 s · bar 118.8–119.2
+- **Music:** the drum fill: 178.59 (f5358, snare and mid), 178.78 (f5363), 178.87 (f5366). The bar 119 downbeat 178.97 (f5369, mid) carries 江, then a kick at 179.06 (f5372). Sung: 赛 f5359, 博 f5364, 江 f5369, 湖 f5375.
+- **Lyric:**
+  - 「赛博江湖」 is phrase 3a: 170 px, x 300–980, y 80–250, gutter `3`. 赛f5359 (300–470), 博f5364 (470–640), 江f5369 (640–810), 湖f5375 (810–980).
+  - 2c leaves f5371–f5376 (bleed).
+- **Picture:** station 3, **the central tower**, defined here.
+  - The tallest tower of the city, BG-tower (13 storeys), is used as a y-axis billboard card. It always faces the camera, which works because the pagoda reads nearly the same from every side. Its axis is at (70, 0…118, −600); the eaves taper from radius 22 m at the base to 8 m at the top roof (y 112). The spire and needle antenna rise above the top roof, and the flat round platform capping the needle at y 118 is where she will stand.
+  - It is the same tower the dragon coiled in Drop 2 (part 09), and now her swords coil it in cyan.
+  - Back to front:
+    - BG11-sky;
+    - BG11-skyline;
+    - the city far below (its boards still dotted with red away from the decoded corridor and square);
+    - the far side of the sword coil (behind the card);
+    - BG-tower filling the left 40 % of the frame (axis at x ≈ 235), shown large;
+    - the near side of the coil (in front of the card);
+    - her: B7 at about (1130, 668) centre, 218 px (feet 777, head 559), heading to the upper right;
+    - rain at 25 %.
+- **Action:** she climbs a helix of radius 16 m around the tower: the angle runs 450° → 262° (188° of turn) and the height 70 → 113 m over the 20 frames. The 3,000 swords follow her as a ribbon wrapped 1.5 turns around the tower below her, the dragon's coil reversed, their code tails running along it like flowing text. On each syllable, one eave tier that the coil passes flips from red to cyan: its lantern strings, edge lights and hanging boards decode, and a ring of cyan light runs round the tier.
+  - f5358 (fill): cut in on the whip's landing. The ribbon is already wrapped round tiers 6–8 below her.
+  - f5359 (赛): tier 9 flips.
+  - f5363 (fill hit): punch S.
+  - f5364 (博): tier 10 flips.
+  - f5366 (fill): the ribbon tightens and the swords' emissive pulses.
+  - f5369 (江): tier 11 flips. Shake S.
+  - f5372 (kick): a wake of cyan sparks peels off her sword.
+  - f5375 (湖): tier 12 flips.
+  - f5376–f5377: she rises past the top roof into open sky. The ribbon unwinds upward after her.
+- **Camera:** an orbit-chase at her chest height, trailing 13° behind her on a 20.5 m radius and looking 40° ahead of her on a 10 m radius, 2.2 m up. It rises with her from 70.45 to 113.65 m. Her screen position holds near (1130, 668).
+- **Grade / R:** R 0.14. Lift level L3 from f5358: exposure 1.12, bloom 1.0, saturation 1.08. Each flipped tier adds a band of cyan light to the tower.
+- **Out:** hard cut at f5378 on 谁; the Enter press opens the next shot.
+- **Art:** B7; SW; BG-tower (shown large, upscaled about ×3); BG11-sky; BG11-skyline; PR11-block-a…f (the city below, small).
+
+#### S11-09 · f5378–f5401 · 24 f · 179.27–180.03 s · bar 119.2–119.7
+- **Music:** a snare at 179.34 (f5380) beside 谁 f5378. A mid hit at 179.53 (f5386) carries 做, and a kick at 179.72 (f5392) sits with 主 f5391.
+- **Lyric:** 「谁做主」 is phrase 3b: 170 px, x 1040–1550, y 80–250. 谁f5378 (1040–1210), 做f5386 (1210–1380), 主f5391 (1380–1550, cyan fill: it is her). 3a stays beside it.
+- **Picture:** the tower's tip, face-on, at her chest height (118.45 m), looking north. Back to front:
+  - BG11-sky;
+  - BG11-tipview (new; -far, -mid and -near as cards at 2 km, 800 m and 300 m): the whole city to the horizon. Its line-1 corridor and line-2 square are already cyan; the rest is still dotted with red at R 0.14;
+  - PR11-tip (BG-tower's top: the top roof falling away on both sides, the platform capping the needle antenna under her);
+  - her: F-enter at (738, 525) centre, 380 px (feet 715, head 335);
+  - the crown of swords (from f5386).
+- **Action:**
+  - f5378 (谁): **F-enter**. She lands and plants the sword in the platform.
+    - The Enter press: the frame dips 6 px on f5378 and springs back over 4 f.
+    - The ⏎ crossguard at her waist flares cyan (glow 60 px, decaying over 6 f).
+    - Hit-stop 4 (f5378–f5381): rain hangs.
+    - A keypress ripple (a flat cyan ring, an ellipse in perspective) leaves the tower's base and runs out across the whole city in BG11-tipview, radius 0 → 1,500 m over f5382–f5426, ease-out. Signboards flicker as it passes; they flip on 生.
+  - f5380 (snare): the coil's last swords arrive from below and circle her.
+  - f5386 (做): the 3,000 swords snap into a throne crown, three rings of 1,000 round her at waist height (y 118.3–118.6), radii 1.6, 2.4 and 3.2 m, packed blade to blade. Tips point outward and up. The rings turn clockwise, anticlockwise and clockwise, their code tails wound round them as three bands of text, and each blade glints on the 16ths. The near arcs pass in front of her legs and waist, never her face.
+  - f5391 (主): swap to **C8** with a hop of 12 px and a landing squash of 6 %. Her thumb points at her chest, her chin is up, the cocky grin. The sword stays planted with her cybernetic hand on the pommel. The crown flares +40 % (6 f decay). An ink-fleck burst comes off her shoulder.
+  - f5392 (kick): the crown's rings counter-spin once, fast (90° in 4 f).
+  - f5393–f5401: she holds C8 and breathes ±1.2 %. The ripple keeps spreading over the city.
+- **Camera:** at her chest height, 3.43 m in front: (70.75, 118.45, −596.6) looking at (70.0, 118.5, −612). Push to (70.6, 118.45, −597.1) by f5401, ease-out; she grows to 440 px and her head stays at y ≥ 293. The dip is on f5378.
+- **Grade / R:** R 0.14. L3. The ⏎ flare is local.
+- **Out:** hard cut at f5402 on 一.
+- **Art:** F-enter; C8; SW (the crown); BG11-sky. New, defined here:
+  - **PR11-tip:** an edit of BG-tower, generated with BG-tower attached so the eaves, spire and antenna match: the very top of that tower at eye level. The top roof tier's upturned eaves slope away out of the frame on both sides, the last section of the spire rises between them, and the needle antenna ends in a flat round bronze platform about 1.4 m across (too small to read in the full tower), whose top is at eye level. Flat magenta behind, 2048×1152, no text.
+  - **BG11-tipview:** the whole city seen from the top of its tallest tower (BG-tower) at night. The camera is level at the tip's height, looking out to a horizon 35 % from the top. Districts of pagoda roofs, archways, megastructures and canals spread to the horizon. One broad straight avenue runs from the bottom centre straight away to the horizon, where the seam will burn. Thousands of tiny windows and blank boards, neutral (no red), no text. The sky above the horizon is flat magenta, so BG11-sky shows through. 2560×1440 in three layers: -far (the skyline band at the horizon), -mid (the districts), -near (the nearest roofs far below, along the bottom edge). Each layer has a measured board map. Placed as cards at 2 km, 800 m and 300 m on the north view axis.
+
+#### S11-10 · f5402–f5448 · 47 f · 180.07–181.60 s · bar 119.7–120.8
+- **Music:** a snare at 180.09 (f5403) beside 一 f5402. The bar 120 downbeat 180.47 (f5414, mid) carries 代. Mid hits fall at 180.84 (f5425) and 181.03 (f5431, 生). 181.31 (f5439) is kick, snare and mid, and 181.59 (f5448) leads into 千.
+- **Lyric:**
+  - 「一行代码定生灭」 is phrase 3c, bottom row, 170 px, x 365–1555, y 840–1010: 一f5402 (365–535), 行f5409 (535–705), 代f5414 (705–875), 码f5420 (875–1045), 定f5427 (1045–1215), 生f5431 (1215–1385, cyan fill), 灭f5436 (1385–1555).
+  - 灭 slams in paper. Its glow blinks out for 2 f (f5436–f5437), as the red does in the picture, then returns cyan.
+  - 3a and 3b bleed out f5440–f5445.
+  - 3c stays until f5460.
+- **Picture:** 3/4 on her, the line of code in the sky. Back to front:
+  - BG11-sky;
+  - BG11-tipview, the city below the horizon at y 540;
+  - **the line of code**: 3,000 swords in the sky at 160 m (world x 41–164, y 137.3, z −760), on screen x 720–1680, y 340–440;
+  - PR11-tip;
+  - SW planted point-down in the platform beside her (screen-right of her);
+  - her: B8 at (536, 524) centre, 326 px (feet 687, head 361). Her cybernetic arm points at the start of the line.
+- **Action:**
+  - f5402 (一): swap to **B8**. The crown's 3,000 swords launch to the upper right (f5402–f5404) and snap into one straight horizontal line across the sky on f5405: 一, a beaded cyan line on screen from x 720 to 1680 at y 390.
+  - f5403 (snare): punch S.
+  - f5405–f5408: the line hums and its swords quiver.
+  - f5409 (行): the line folds into the strokes of `while (bug) slash();`. The 20 JetBrains Mono ExtraBold glyphs are drawn by swords, about 150 per glyph (their code tails lie flat along the strokes like hatching), sampled from the font's outline the way tokentoken built its voxel TOKEN. The em is 90 px and the baseline y 420. Each sword slides along its own curve to its stroke slot (f5409–f5413).
+  - f5414 (代, downbeat): `while (bug` (glyphs 1–10) brightens from dim cyan to white-cyan.
+  - f5420 (码): `) slash();` (glyphs 11–20) brightens.
+  - f5425 (hit): the whole line pulses once.
+  - f5427 (定): it runs. An execution caret, a white-hot block 50 × 90 px, travels the line left to right in 4 f (f5427–f5430), and each glyph flares as it passes.
+  - f5431 (生): **second decode**. The line's light drops onto the city as a curtain and sweeps toward screen-right across the city strip (y 540–840): a vertical band of cyan light, 120 px wide, moving from x 720 to 1920 in 5 f (f5431–f5435). Every board it passes re-types cyan and every window lights cyan-white.
+  - f5436 (灭): every red board beyond the sweep, the right-hand and middle districts out to the horizon, goes black for 2 f (f5436–f5437). From f5438 to f5444 they re-type in cyan.
+  - A band of far districts on the left horizon (screen x 0–500) stays faintly red. That is the last red, which 赛 will take.
+  - f5439 (hit): shake S.
+  - f5440–f5448: she breathes in B8. The code line hangs with its swords quivering, and ink flecks drift past.
+- **Camera:** at her chest height, looking due north: (71.3, 118.45, −596.0) dollying back to (71.6, 118.45, −594.6) by f5448, ease-in-out. She shrinks to 242 px at (574, 528), revealing the cyan swath across the city. Punch S at f5403. Shake S at f5439.
+- **Grade / R:** R 0.14 → 0.11 (生) → 0.08 (灭). L3. The city strip's cyan now outweighs its red for the first time.
+- **Out:** hard cut at f5449 on 千.
+- **Art:** B8; SW (planted, and the code line); PR11-tip; BG11-tipview; BG11-sky.
+
+#### S11-11 · f5449–f5548 · 100 f · 181.63–184.93 s · bar 120.8–123.0
+- **Music:** bar 121 has hats at 181.97 (f5459, 剑), then the strong snare 182.34 (f5470) under the second 千. Snares at 182.72 (f5482) and 182.81 (f5484), mid hits at 183.09 (f5493) and 183.18 (f5495), and a kick at 183.28 (f5498). Bar 122 has **no sub at all**, as before 劈 in Chorus 1:
+  - 183.47 (f5504) snare and mid;
+  - **the slam 183.84 (f5515, mid) on 赛, impact frame f5516**;
+  - 184.03 (f5521) 博; 184.22 (f5527);
+  - 184.50 (f5535) snare and mid with 无;
+  - 184.78 (f5543) snare.
+
+  缺 f5540 is held into the outro downbeat at 184.97 (f5549), where the sub returns.
+- **Lyric:** line 4, played as the diff.
+  - **The code treatment** (designed here). Two pieces of text are diff code rather than sung lyric: a hunk header, and the gutter, which carries a line number and a `-`/`+` marker. Both are set in JetBrains Mono, so a programmer reads "git diff" at a glance, and the film's two story colours already are diff colours (deleted red, added cyan). Each row's content stays in 志莽行书, the chorus font. The content is the sung lyric and keeps the chorus slam. The old line must also look exactly as the audience saw it in Choruses 1–2, so they recognise what is being replaced, as tokentoken's payoff reused chorus 1's own line. Calligraphy inside a code frame is the film's whole idea, a programmer artifact in a wuxia skin. Each row's plate is a wet ink stroke washed in its diff colour.
+  - Positions:
+    - Header row y 64–224: `@@ -4 +4 @@`, then the sung context, which is how git prints a hunk heading.
+    - Row B (`-`) y 244–364.
+    - Row C (`+`) y 384–564, rising to y 244–424 after the cut.
+    - Gutters: `4` at x 250, marker at x 320, JetBrains Mono 60 px.
+  - **4a** 「千行剑」 千f5449 行f5454 剑f5459: 160 px, x 370–850, y 64–224, paper with a cyan glow.
+  - 3c leaves f5461–f5466.
+  - **4b** 「千行剑」 千f5470 行f5476 剑f5481: 160 px, x 900–1380, y 64–224.
+  - f5470–f5475: `@@ -4 +4 @@` types in at two characters per frame (JetBrains Mono 36 px, paper at 60 %, x 100–340, baseline y 155).
+  - **Row B, the old line** 「一剑劈开数据界」 (not sung; text exactly as `song.md`): 120 px, x 400–1240, so 一 400–520, 剑 520–640, 劈 640–760, 开 760–880, 数 880–1000, 据 1000–1120, 界 1120–1240.
+    - f5474–f5477: it bleeds in paper-white with a cyan glow, its Chorus 1–2 look, with the dim `4` those choruses printed in its gutter (JetBrains Mono 28 px, paper at 35 %, at x 250).
+    - f5478: the gutter stamps `4` and `-` in cinnabar (the dim `4` swells to 60 px as it turns), and the row floods cinnabar from left to right over 4 f (glyph fill, plus a cinnabar wash at 22 % on its ink plate, x 230–1260).
+    - Its glow becomes cinnabar (18 px) and pulses on f5482, f5493 and f5504.
+  - **Row C, the new line**:
+    - f5481: the gutter stamps `4` and `+` in cyan. A cyan-washed plate (16 %) paints in from the left over 4 f (x 230–1680). A cyan caret (a 14 × 170 px block) appears at x 400 and blinks on the beats (on 6 f, off 5 f).
+    - 此f5494: slams at x 400–580 (cyan fill with a white core, 140 → 112 → 100 %), and the caret jumps to 580.
+    - 去f5501: slams at x 580–760, and the caret jumps to x 760, which is her raised blade.
+    - f5502–f5514: the caret stops blinking and stays lit. Its glow grows from 20 to 60 px.
+    - **赛f5515**: carved into Row C at x 760–940 by the giant sword's streak (the streak is the mask, top to bottom in 1 frame), white-hot at 160 %. f5516 125 %, f5517 100 %. f5518: 5 ink flecks burst round it. Its cyan glow (60 px) pulses on f5521.
+    - 博f5521 (940–1120), 再f5530 (1120–1300), 无f5535 (1300–1480) and 缺f5540 (1480–1660) each slam on their frames. The caret leads each character and disappears at f5541. A cyan underline of light runs under the row from left to right over f5540–f5545. The `+` stays and brightens.
+  - Row B is cut on f5515: a 2 px white-hot line at x 760, between 劈 and 开.
+    - f5516–f5520: the halves part by 4 px, with glowing edges.
+    - From f5521 they fall away beneath Row C over f5521–f5532 (ease-in). 「一剑劈」 moves (−520, +620), rotates −8° and scales to 45 %. 「开数据界」 moves (+560, +600), rotates +8° and scales to 45 %.
+    - f5525: a 1 f white flash on their glyphs only.
+    - f5526: they turn ink-black and burst into droplets that fall and are gone by f5536.
+    - Row B's wash and its `4 -` gutter fade over f5521–f5526.
+  - f5528–f5535: Row C and its gutter rise 140 px into the vacated slot (y 244–424, ease-in-out). The `+` line lands in the `-` line's place.
+  - Final layout at f5548: `@@ -4 +4 @@ 千行剑 千行剑` on top, `4 + 此去赛博再无缺` under it. No text at x > 1560 above y 200. Part 12 holds it until at least f5564.
+- **Picture:** station 4, the payoff on the tower's tip, looking north. Back to front:
+  - BG11-sky, with the clouds parting in a ring round the giant blade from f5470;
+  - BG11-tipview, mostly cyan with the last red on the far-left horizon, as a skyline strip under the horizon line (which moves; see Camera);
+  - **the giant sword** (f5470–f5514): 10,000 swords locked into one blade of light, 300 m long and 34.5 m wide (Chorus 1's was about 40 m, Chorus 2's 120 m). Forced perspective places it 200 m behind her on the camera ray through her own blade's tip (at f5470 its base is about 194 m up, 76 m above her eye), so on screen her real blade continues straight up into it: 220 px wide, from y ≈ 375 out of the top of the frame (its point would be near y −1540). Each sword stays visible as a scale of the blade, and its code tail stretches into a lengthwise stream of glyphs inside the blade;
+  - PR11-tip;
+  - her: F-charge, then F-chop, then **B9**, always centred at x 760 (sizes under Camera);
+  - FX: the vortex, the smear, the seam, the wave, motes, rain;
+  - lyric layer on top.
+- **Action:**
+  - f5449 (千): **F-charge**, cut in.
+    - She has pulled the sword from the platform; the planted SW of S11-10 is gone across the cut, and the sword is raised overhead in both hands.
+    - The code line's glyphs dissolve into their 3,000 swords. They stream back from the upper right in an arc past and behind her, arriving over f5449–f5466.
+  - f5454 (行): **3,500 swords lift off the city's rooftops**, the cyan uprights on every ridge of the near districts at once, like a field of sparks rising from the skyline strip. Each unrolls a code tail as it rises.
+  - f5459 (剑, hats): the other 3,500 rise from the farther districts, some of them out of the red band on the left horizon. Every sword planted on the city's ridges is now in the air.
+  - f5459–f5466: all 10,000 (her 3,000 and the city's 7,000) converge into a rising vortex column centred on the ray behind her blade. It spirals upward, and its emissive climbs on the 16ths.
+  - f5466–f5470: they lock into the giant blade, scale by scale, from her blade tip upward. Every lock leaves a 1 f glint.
+  - f5470 (second 千, strong snare): the last scale locks. **Large flash 3**: a bloom swell (exposure +25 % over 3 f, back over 10 f). A ring of light opens in the clouds round the blade's upper part and widens until f5490.
+  - f5470–f5514: the giant blade hums. Its scales shimmer on the 16ths (±10 % emissive, hashed phase), and a pulse of cyan code-light runs up it on each beat (f5470, f5482, f5493, f5504). Rain thins to nothing round it by f5490.
+  - f5482 and f5484 (snares): her F-charge drawing jitters 4 px (strain), and her ribbon tails lift.
+  - f5494 (此): she rises, a hop while holding F-charge: +0.13 m (40 px) over f5494–f5508 (ease-out). She hangs there to f5514 with a ±1 % breath. The blade rises with her.
+  - f5498 (kick): the giant blade brightens 15 %.
+  - f5504 (bar 122 downbeat, the bass gone): breath-in. Everything except the giant blade, her and the lyric layer dims 8 % over f5504–f5514. The caret is lit solid on her blade.
+  - **f5515 (赛)**: the smear. The giant blade falls with her chop and passes "through the lens" as one vertical brush crescent at x 760, running the full frame height. It widens downward from 220 px to 520 px, with an 8 px white core and dry-brush breaks. 赛 is carved and Row B is cut (see Lyric).
+  - **f5516**, impact frame 1, on the hit: **F-chop** appears, crouched, the blade pointing down between her feet. Three tones (ink, paper, cinnabar):
+    - her F-chop silhouette inverted to paper on ink;
+    - the blade's path a paper wedge;
+    - radial brush lines from Row B's cut point (760, 304);
+    - the city as ink with cinnabar windows.
+  - **f5517**, impact frame 2: the same image with **cyan in place of cinnabar**. The film's red-to-cyan turn happens across these two frames.
+  - f5518–f5520: the hit-stop continues in full colour (5 frames from f5516). Everything is frozen: rain hangs and her ribbons stop mid-swing. **The seam**, a white-cyan cut line at x 760, runs from the top of the frame to the bottom. Where it crosses the skyline strip it burns into the city as a straight trench of light running directly away from the camera behind her. R is 0.
+  - **f5521 (博)**: release, and **third and final decode, the wave**.
+    - The 10,000 scales burst out of the seam as cyan streaks. Low over the rooftops of the skyline strip, two wave fronts race apart from x 760 at about 45 px/f, reaching the frame edges by f5539. Above, they rise into the sky as motes.
+    - Behind the fronts, every board re-types cyan glyph by glyph and every window turns cyan-white.
+    - The hanging raindrops become cyan motes and drift upward (the rain rises as light).
+    - Shake L from f5521 (decays over 14 f).
+  - f5527 (hit): a second, brighter ring follows the first: everything already cyan brightens 15 %, the commit pass.
+  - **f5530 (再)**: **B9**, with a hop of 30 px out of the crouch. The sword is raised straight up in her right hand, her left hand open to the side, a triumphant open-mouthed smile. Her hair and ribbons lift. Her blade rises through Row C beside 赛.
+  - f5530–f5537: the left front reaches the red band on the far-left horizon and flips it.
+  - f5535 (无, snare): the fronts pass three-quarters of the way to the edges. The clouds' undersides light cyan.
+  - **f5540 (缺)**: the last red board in the film, at the far left (x ≈ 60), re-types cyan. The rising motes reach the top of the frame.
+  - f5543 (snare): one last breath. The whole city's cyan swells +10 % over 3 f and holds.
+  - f5544–f5548: **the brightest frame of the film**. B9 breathes ±1.2 % and her ribbons float. Motes drift up through the sky. The seam glows below her feet. The camera keeps pulling back.
+- **Camera:** one continuous WebGL move, always at her chest height (118.45 m) and looking due north. She is held at screen x 760 by offsetting the camera to x = 70 + 200·d/1304. Vertical framing uses a lens shift (the frame slides; the camera never pitches), given below as where the horizon line sits on screen.
+  - f5449: d 2.8 m, horizon y 640. She is 466 px (feet 850, head 384) with the sword overhead out of the top of the frame.
+  - f5449–f5470, ease-out: through d 3.5 / horizon 760 at f5459, to d 4.3 / horizon 860 at f5470. She is 303 px: feet 996, head 693, hands 663, blade tip 375. Her blade crosses Row C, so the caret sits on it.
+  - f5470–f5514: push to d 4.15 (about 2.5 %/s).
+  - f5516: punch L (+8 % over 2 f), held frozen through the hit-stop, eased back over 10 f from f5521. Shake L from f5521.
+  - f5521–f5532, the release, ease-out: d 4.15 → 4.6 and horizon 860 → 760. The city rises into view under her as a 320 px strip.
+  - f5532–f5548, ease-out: pull back to d 5.4 with the horizon at 740. At f5548 she is 242 px (feet 849, head 607) and the B9 blade tip is at y 330.
+  - Her head never rises above y 600 after the cut, so Row C (bottom 564 → 424) never covers her face.
+- **Grade / R:**
+  - R 0.08 → 0 on f5517, the second impact frame. The cinnabar component of the grade is zero from then on.
+  - Lift level L4:
+    - exposure 1.12, with the swell to 1.25 at f5470;
+    - 1.15 to f5503, then −8 % on everything but the blade, her and the text over f5504–f5514;
+    - from f5518, a ramp to **1.35 at f5548**;
+    - bloom 1.0 → 1.6, saturation 1.08 → 1.18.
+  - The clouds pick up a 20 % cyan underglow from the city. Highlights roll softly into white.
+- **Out:** hand-off at f5549. Part 12 continues the pull-back, and this part adds no transition.
+- **Art:** F-charge; F-chop; B9; SW (10,000 instances: vortex, giant blade, wave); PR11-tip; BG11-tipview; BG11-sky.
+
+**State out (f5548 → f5549):**
+- She stands on the platform capping BG-tower's needle antenna (the tower's tip) in **B9**, the sword raised straight up in her right hand. Screen x 760, feet y 849, head y 607, 242 px; the blade tip is at y 330, rising through Row C beside 赛.
+- The camera is at her chest height 5.4 m in front of her, looking north, lens-shifted so the horizon sits at y 740. It is still pulling back (ease-out, about 0.03 m/f) when part 12 takes over.
+- **The whole city is cyan** to the horizon: every board re-typed, every window cyan-white. A cyan seam runs from under her feet straight away to the horizon.
+- The 10,000 swords are dispersed as rising cyan motes. The clouds are parted, with cyan undersides. No rain. **R 0.**
+- Exposure 1.35, bloom 1.6, saturation 1.18: the brightest frame of the film.
+- On screen: `@@ -4 +4 @@ 千行剑 千行剑` (y 64–224) and `4 + 此去赛博再无缺` (y 244–424). No `-` row remains. 缺 (f5540) is held to f5554, so the line must stay until at least f5564.
+- Music: 缺 held, and the outro downbeat with the sub's return lands on f5549.
+- Part 12 keeps this comp rendering as screen content to f5615 (B9's idle, the motes, the lanterns), so the WebGL scene runs on past f5548; the `@@ -4 +4 @@ 千行剑 千行剑` header row is carried out with the `+` line.
+
+**Art in this part:**
+- Registry drawings: B7 · B8 · C7 · C8 · B9 · F-issen · F-sword_finger · F-enter · F-charge · F-chop · SW (single sword, formation instances, flakes, crown, code line and giant blade).
+- Shared plates and props: BG-ridge; BG-tower (part 08; S11-05, S11-07, S11-08, and attached for PR11-tip); BG02-wallinside `-elevation` (part 02; S11-05 to S11-07); PR06-moon (part 06; the sky cylinder).
+- New, each defined in the Art line of its first shot:
+  - N11-ride_front (S11-03): the only new drawing.
+  - BG11-sky, BG11-skyline, PR11-block-a…f (S11-01).
+  - PR11-banner (S11-02).
+  - PR11-plaza, PR11-huabiao (S11-05). PR11-gate and PR11-pagoda are dropped (BG02-wallinside `-elevation` and BG-tower replace them).
+  - PR11-tip (an edit of BG-tower, generated with it attached), BG11-tipview (S11-09).
+- Code only, no art: the red wall, the banner stack traces, the bug holes and their crawling lines, every decode, the code line `while (bug) slash();`, the diff header, gutters and caret, the seam, the wave, rain, ink, impact frames, HUD glints.
