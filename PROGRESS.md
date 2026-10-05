@@ -7,6 +7,37 @@ This folder is its own git repo (`github.com/teosam89/QianHangJian`, branch `cla
 started in a Claude Code cloud session (https://claude.ai/code/session_01YNPA8RVNfoiCJHCbXVnu6T, 2026-10-05) and moved
 into `VideoProduce/` the same day. Run `git fetch` before work: a cloud session may have pushed since.
 
+## Paused here (2026-10-05, cloud session) — next steps, to run locally
+
+The owner paused the cloud work for lack of usage (「由于现在usage不太够了 至于剩下的部分先搁置 记录在progress里面 我会在本地跑」).
+Done and pushed: the song analysis (`song/timeline.json`, `song/frames.md`), the fight and acting designs (`notes/`),
+the storyboard draft 1 (`STORYBOARD.md`, `storyboard/01–12`, 261 shots) and the chibi reference-sheet prompts
+(`prompts/chibi.md`). Open, in order:
+
+1. **Owner:** review the storyboard draft 1 (start with `STORYBOARD.md`: idea, rules, part index, rulings G1–G7, known
+   issues). Every change goes into the part file; rerun `python tools/check_storyboard.py` (tiling, every sung
+   character on its frame, impact frames ≤ 3 per second).
+2. **Owner:** generate the chibi reference sheet by hand in ChatGPT (`prompts/chibi.md`: message 0 with
+   `refs/01-turnaround.png` and `refs/02-sword.png`, then the sheet), check it against the checklist there, push it as
+   `images/00_chibi_sheet.png`.
+3. **Art list (not started; a cloud workflow was stopped before it wrote anything):** compile `ART_LIST.md` from the
+   storyboard. Method: extract every art id from the twelve parts with its full definition (the first-use definition in
+   a shot's Art line plus later requirements; each part's "Art in this part" list is incomplete on its own), merge
+   near-duplicates (several new `N…` drawings are close to registry drawings), then group into generation batches:
+   - the chibi reference sheet as the gate;
+   - chibi sheets: 3×3 square for upright stickers, 3×2 landscape for wide poses and big swords, 2×2 for busts;
+     left-facing cells checked together;
+   - the boss ink sheets (2×2, white, monochrome);
+   - the shared anchors first, because other images attach them: BG-tower, BG-city-wide, BG02-firewall,
+     BG02-wallinside, PR02-enterkey, PR02-lantern, PR02-chipdie, PR06-moon, DESK-night, MON;
+   - props on magenta, then backgrounds by part, then edits (DESK-dawn, ink edits, close views).
+   Rough size: about 90 chibi drawings, 50 backgrounds, 30 props and 2 boss sheets; at about 10 generations a day,
+   plan on one to two weeks of generation.
+4. **Sheet prompts:** add them to `prompts/chibi.md` (and a prompts file for backgrounds and props), each with the
+   images to attach, after steps 1–3.
+5. **Build:** align Remotion to 4.0.529 and bring in the moren/tokentoken kit (Phase 6), then a sample section and
+   mv-reviewer QA rounds, as on tokentoken. Re-check the Music onsets on a stem split first (known issue 1).
+
 ## Phase 1 — Design
 
 - [x] Visual direction locked in the cloud session (2026-10-05): 「墨底霓虹」, an ink-wash and neon world with a bright,
